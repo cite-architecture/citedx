@@ -61,7 +61,7 @@ The `cexversion` block contains a single content line with a string identifying 
 The `citelibrary` block contains three content lines with metadata about the entire library of material serialized in this CEX file.  The three items are formatted as key-value pairs.  Each key and value is separated by a string delimiter that does not otherwise appear in content lines of the block.  The required strings for keys and their meaning are;
 
 - `name`: a human-readable name or label for this data set
-- `version`: a version identifier
+- `urn`: a CITE2 URN uniquely identifying this library
 - `license`: a licensing statement
 
 **Example**:  The following example is a valid `citelibrary` block.  It includes empty lines and a comment lines, in addition to the three required key-value pairs.
@@ -73,19 +73,57 @@ The `citelibrary` block contains three content lines with metadata about the ent
     # the column delimiter.
 
     name#Iliadic Metrical Summaries
-    version#2017.1
+    urn#urn:cite2:hmt:cex.2017_1:metsumm
     license#Creative Commons Attribution, Non-Commercial 4.0 License <https://creativecommons.org/licenses/by-nc/4.0/>.
 
-### `ctsdata`
 
 ### `ctscatalog`
 
+
+The `ctscatalog` block contains a table with minimal cataloging data about one or more citable texts.  The table is represented as seven columns of delimited text, with columns separated by a string delimiter that does not otherwise appear in content lines of the block.  The first content line is a header line with labels for each column.  Subsequent content lines document citable versions or exemplars of a text.  The seven columns may have any String labels in the header row, but in all rows columns must follow this sequence:
+
+1. CTS URN for the version or exemplar
+2. labels for each tier of the citation hierarchy, with levels separated by a "/" character
+3. name of the text group
+4. title of the work
+5. label of the edition or translation
+6. label of the specific exemplar, if any
+7. whether the work is online: `true` or `false`
+
+
+Note that it is possible to catalog texts that are not online.  Within a CEX serialization, cataloging a work as online means that citable texts nodes for this CTS URN must be available in the `ctsdata` block of the CEX.
+
+**Example**:
+
+    #!ctscatalog
+
+    # Complete catalog for a single citable text: an edition
+    # of scholia in a manuscript of the *Iliad*.  There is no
+    # specific exemplar of this edition.
+
+    urn#citationScheme#groupName#workTitle#versionLabel#exemplarLabel#online
+    urn:cts:greekLit:tlg5026.msA.hmt:#book/comment/section#Scholia Vetera in Iliadem#Main scholia to Venetus A#Homer Multitext##true
+
+
+### `ctsdata`
+
+
+The `ctsdata` block contains a two-column representation of a citable text in the OHCO2 model.  Columns are separated by a string delimiter that does not otherwise appear in content lines of the block.  The first column gives the CTS URN for a citable node; the second column gives it text contents.  Within a given citable version or exemplar, nodes must be in document order.
+
+**Example**:
+
+    # Valid CTS data.  "#" is the column delimiter
+    
+    urn:cts:greekLit:tlg5026.msA.hmt:1.2.lemma#μῆνις
+    urn:cts:greekLit:tlg5026.msA.hmt:1.2.comment#παρὰ τὸ μένω μῆνις ὡς ἐνὸς ἦνις· οἱ δὲ περὶ Γλαύκωνα τὸν Ταρσέα ἠξίουν ὀξύνειν τὸ ὄνομα οὐκ ὀρθῶς.
 
 ### `citedata`
 
 TBA
 
 ### `citecatalog`
+
+
 
 TBA
 
