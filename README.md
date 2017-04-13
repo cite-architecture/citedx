@@ -2,7 +2,7 @@
 
 A repository for openly licensed libraries of data in valid `.cex` format. Licensing information is included in each `.cex` file, and in [LICENSE.markdown](LICENSE.markdown).
 
-## The CITE Exchange format?s
+## The CITE Exchange format
 
 See the documentation in the [docs directory](docs).
 
