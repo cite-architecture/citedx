@@ -6,7 +6,7 @@ A repository for openly licensed libraries of data in valid `.cex` format. Licen
 
 See the documentation in the [docs directory](docs).
 
-## Contents
+## Data sets
 
 - `million.cex`. A demonstration file containing texts in Arabic, Greek, Latin, English, and German.
 - `croala-selections.cex`. A demonstration file containing Latin texts from the Croatiae Auctores Latini project, Neven Jovanović, ed.
