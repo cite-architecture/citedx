@@ -4,7 +4,7 @@ A repository for openly licensed libraries of data in valid `.cex` format. Licen
 
 ## The CITE Exchange format
 
-See the documentation in the [docs directory](docs).
+See the specification in the [docs directory](docs).
 
 ## Freely reusable data sets
 
