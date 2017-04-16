@@ -1,6 +1,6 @@
 # citedx · CITE Data Exchange Repository
 
-A repository for openly licensed libraries of data in valid `.cex` format. Licensing information is included in each `.cex` file;  additional detail are provided in [libraries/LICENSE.markdown](LICENSE.markdown).
+A repository for openly licensed libraries of data in valid `.cex` format. Licensing information is included in each `.cex` file;  additional details are provided in [libraries/LICENSE.markdown](LICENSE.markdown).
 
 ## The CITE Exchange format
 
@@ -9,7 +9,7 @@ See the documentation in the [docs directory](docs).
 ## Freely reusable data sets
 
 All files in the `libraries` directory have passed an automated validation. (See
-the following section on how to validate your own files). 
+the following section on how to validate your own files).
 
 To pass validation, the CEX must be syntactically correct.  That is, it must use only valid CEX block labels, and must include a `#!citelibrary` block.
 
