@@ -6,7 +6,7 @@ A repository for openly licensed libraries of data in valid `.cex` format. Licen
 
 See the documentation in the [docs directory](docs).
 
-## Data sets
+## Freely reusable data sets
 
 Files in the `libraries` directory have passed validation testing. (See
 the following section on how to validate your own files).  Files
@@ -22,7 +22,7 @@ In addition, for libraries that include a text repository, the referential integ
 - there must be a 1<->1 correspondence between works cataloged as being online and works appearing in the citable data block
 
 
-## Validation, and contributing your libraries
+## Validating and contributing your own libraries
 
 The `validator` directory includes a scala build file and short script to validate all files in the `libraries` directory with file names ending in `.cex`.  You must have scala and sbt installed to run it as follows:
 
