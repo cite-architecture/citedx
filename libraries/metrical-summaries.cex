@@ -1,7 +1,15 @@
-#!citerepo
+#  A library of the one-line poetic summaries of the books of the 
+# Homeric Iliad, from CroALa and the Homer Multitext project.
+
+#!cexversion
+1.0
+
+
+#!citelibrary
 name#Iliadic Metrical Summaries
 version#2017.1
 license#CC Share Alike. For details, see more info.
+
 #!ctscatalog
 urn#citationScheme#groupName#workTitle#versionLabel#exemplarLabel#online
 urn:cts:greekLit:tlg7000.tlg001.msA:#book/poem/line#The Greek Anthology#Anthology#Greek. Argumenta Iliados. Venetus A (Marcianus 822). Homer Multitext. CC 3.0.##true
@@ -11,6 +19,8 @@ urn:cts:greekLit:tlg7000.tlg001.o112:#book/poem/line#The Greek Anthology#Antholo
 urn:cts:greekLit:tlg7000.tlg001.o112eng:#book/poem/line#The Greek Anthology#Anthology#Eng. Argumenta Iliados. K. Phillips, trans. from MS. Escorial Ω 1.12. Homer Multitext. CC 3.0.##true
 urn:cts:greekLit:tlg7000.tlg001.u11:#book/poem/line#The Greek Anthology#Anthology#Greek. Argumenta Iliados. MS. Escorial Υ 1.1. Homer Multitext. CC 3.0.##true
 urn:cts:greekLit:tlg7000.tlg001.u11eng:#book/poem/line#The Greek Anthology#Anthology#Eng. Argumenta Iliados. K. Phillips, trans. from MS. Escorial Υ 1.1. Homer Multitext. CC 3.0.##true
+
+
 #!ctsdata
 urn:cts:greekLit:tlg7000.tlg001.msA:9.385.1#ἄλφα λιτὰς Χρύσου. λοιμὸν στρατοῦ· ἔχθος ἀνάκτων +
 urn:cts:greekLit:tlg7000.tlg001.msA:9.385.2#βῆτα δ’ ὄνειρον ἔχει· ἀγορήν· καὶ νῆας ἀριθμεῖ·
