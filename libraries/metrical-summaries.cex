@@ -1,4 +1,4 @@
-#  A library of the one-line poetic summaries of the books of the 
+#  A library of the one-line poetic summaries of the books of the
 # Homeric Iliad, from CroALa and the Homer Multitext project.
 
 #!cexversion
@@ -7,7 +7,7 @@
 
 #!citelibrary
 name#Iliadic Metrical Summaries
-version#2017.1
+urn#urn:cite2:cex:demo.2017_1:metsumm
 license#CC Share Alike. For details, see more info.
 
 #!ctscatalog
@@ -71,31 +71,31 @@ urn:cts:greekLit:tlg7000.tlg001.msAeng:9.385.22#Chi. And leading him around the 
 urn:cts:greekLit:tlg7000.tlg001.msAeng:9.385.23#Psi. Achilleus completes giving games for the Danaans.
 urn:cts:greekLit:tlg7000.tlg001.msAeng:9.385.24#Ō. Achilleus, having taken a ransom, gives Priam the corpse of his son.
 urn:cts:greekLit:tlg7000.tlg001.kunic:9.385.head#ARGUMENTA SINGULORUM LIBRORUM SINGULIS VERSIBUS AB INTERPRETE COMPREHENSA.
-urn:cts:greekLit:tlg7000.tlg001.kunic:9.385.1#Iratus bello sociali absistit Achilles. 
-urn:cts:greekLit:tlg7000.tlg001.kunic:9.385.2#Falsa Mycenaeum ludunt insomnia regem. 
-urn:cts:greekLit:tlg7000.tlg001.kunic:9.385.2b#Quo duce, qui populi, quotnam venere carinis. 
-urn:cts:greekLit:tlg7000.tlg001.kunic:9.385.3#Ergo Helenae soli pugnant Paris et Menelaus. 
+urn:cts:greekLit:tlg7000.tlg001.kunic:9.385.1#Iratus bello sociali absistit Achilles.
+urn:cts:greekLit:tlg7000.tlg001.kunic:9.385.2#Falsa Mycenaeum ludunt insomnia regem.
+urn:cts:greekLit:tlg7000.tlg001.kunic:9.385.2b#Quo duce, qui populi, quotnam venere carinis.
+urn:cts:greekLit:tlg7000.tlg001.kunic:9.385.3#Ergo Helenae soli pugnant Paris et Menelaus.
 urn:cts:greekLit:tlg7000.tlg001.kunic:9.385.4#Confundit foedus Pallas, pugna aspera surgit.
-urn:cts:greekLit:tlg7000.tlg001.kunic:9.385.5#Tydides Venerem, dehinc Martem vulnerat hasta. 
-urn:cts:greekLit:tlg7000.tlg001.kunic:9.385.6#Urbem adit, Andromachen affatur Martius Hector. 
-urn:cts:greekLit:tlg7000.tlg001.kunic:9.385.7#Stant acies: medii confligunt Hector, et Ajax. 
-urn:cts:greekLit:tlg7000.tlg001.kunic:9.385.8#AJupiter Argivos premit: Hector laude superbit. 
-urn:cts:greekLit:tlg7000.tlg001.kunic:9.385.9#Peliden orant reges, nec flectere possunt. 
-urn:cts:greekLit:tlg7000.tlg001.kunic:9.385.10#Tydides socio Troas speculatur Ulysse. 
+urn:cts:greekLit:tlg7000.tlg001.kunic:9.385.5#Tydides Venerem, dehinc Martem vulnerat hasta.
+urn:cts:greekLit:tlg7000.tlg001.kunic:9.385.6#Urbem adit, Andromachen affatur Martius Hector.
+urn:cts:greekLit:tlg7000.tlg001.kunic:9.385.7#Stant acies: medii confligunt Hector, et Ajax.
+urn:cts:greekLit:tlg7000.tlg001.kunic:9.385.8#AJupiter Argivos premit: Hector laude superbit.
+urn:cts:greekLit:tlg7000.tlg001.kunic:9.385.9#Peliden orant reges, nec flectere possunt.
+urn:cts:greekLit:tlg7000.tlg001.kunic:9.385.10#Tydides socio Troas speculatur Ulysse.
 urn:cts:greekLit:tlg7000.tlg001.kunic:9.385.11#Pugna, ubi primores Danaum sunt vulnere laes i.
-urn:cts:greekLit:tlg7000.tlg001.kunic:9.385.12#Grajorum ad murum pugnant: intro irruit Hector. 
+urn:cts:greekLit:tlg7000.tlg001.kunic:9.385.12#Grajorum ad murum pugnant: intro irruit Hector.
 urn:cts:greekLit:tlg7000.tlg001.kunic:9.385.13#Neptunus Danais vires clam fratre ministrat.
-urn:cts:greekLit:tlg7000.tlg001.kunic:9.385.14#Illicit, et somno componit Juno Tonantem. 
+urn:cts:greekLit:tlg7000.tlg001.kunic:9.385.14#Illicit, et somno componit Juno Tonantem.
 urn:cts:greekLit:tlg7000.tlg001.kunic:9.385.15#Jupiter evigilat; fratrem fugat, Hectora firmat.
 urn:cts:greekLit:tlg7000.tlg001.kunic:9.385.16#Patroclum leto victorem dejicit Hector.
-urn:cts:greekLit:tlg7000.tlg001.kunic:9.385.17#Ingens Patrocli ad gelidum fit pugna cadaver. 
+urn:cts:greekLit:tlg7000.tlg001.kunic:9.385.17#Ingens Patrocli ad gelidum fit pugna cadaver.
 urn:cts:greekLit:tlg7000.tlg001.kunic:9.385.18#Arma parat solers dio Vulcanus Achilli.
 urn:cts:greekLit:tlg7000.tlg001.kunic:9.385.19#Desinit irarum, belloque armatur Achilles.
-urn:cts:greekLit:tlg7000.tlg001.kunic:9.385.20#Divi inter sese magno certamine pugnant. 
-urn:cts:greekLit:tlg7000.tlg001.kunic:9.385.21#Aeacidae labor ad Xantum, pugnaeque deorum. 
-urn:cts:greekLit:tlg7000.tlg001.kunic:9.385.22#Hectora persequitur, caesoque insultat Achilles. 
+urn:cts:greekLit:tlg7000.tlg001.kunic:9.385.20#Divi inter sese magno certamine pugnant.
+urn:cts:greekLit:tlg7000.tlg001.kunic:9.385.21#Aeacidae labor ad Xantum, pugnaeque deorum.
+urn:cts:greekLit:tlg7000.tlg001.kunic:9.385.22#Hectora persequitur, caesoque insultat Achilles.
 urn:cts:greekLit:tlg7000.tlg001.kunic:9.385.23#Patrocli funus,vario et certamine ludi.
-urn:cts:greekLit:tlg7000.tlg001.kunic:9.385.24#Redditur Hectoreum corpus, fletumque crematur. 
+urn:cts:greekLit:tlg7000.tlg001.kunic:9.385.24#Redditur Hectoreum corpus, fletumque crematur.
 urn:cts:greekLit:tlg7000.tlg001.o112:9.385.1#ἄλφα λιτὰς Χρύσου· λοιμὸν στρατοῦ· ἔχθος ἀνάκτων.
 urn:cts:greekLit:tlg7000.tlg001.o112:9.385.2#βῆτα δ’ ὄνειρον ἔχει· ἀγορήν· καὶ νῆας ἀριθμεῖ·
 urn:cts:greekLit:tlg7000.tlg001.o112:9.385.3#γάμμα δ’ ἄρ’ ἀμφ’ Ἑλένηι· οἴοις μόθος ἐστὶν
@@ -130,7 +130,7 @@ urn:cts:greekLit:tlg7000.tlg001.o112eng:9.385.7#And Eta: Aias fights one-on-one 
 urn:cts:greekLit:tlg7000.tlg001.o112eng:9.385.8#Theta contains an assembly of the gods. The might of the Trojans. The onslaught of Hektor.
 urn:cts:greekLit:tlg7000.tlg001.o112eng:9.385.9#And a mission to implacable Achilleus, is Iota.
 urn:cts:greekLit:tlg7000.tlg001.o112eng:9.385.10#And Kappa: men from both sides went forth to spy.
-urn:cts:greekLit:tlg7000.tlg001.o112eng:9.385.11#And Lambda. Men of Hektor strike the best of the Danaans. 
+urn:cts:greekLit:tlg7000.tlg001.o112eng:9.385.11#And Lambda. Men of Hektor strike the best of the Danaans.
 urn:cts:greekLit:tlg7000.tlg001.o112eng:9.385.12#Mu. By the hands of the Trojans, the Achaians’ wall is hurled down.
 urn:cts:greekLit:tlg7000.tlg001.o112eng:9.385.13#And Nu. Poseidon gives power to the Danaans in secret.
 urn:cts:greekLit:tlg7000.tlg001.o112eng:9.385.14#Xi. Hera beguiles the Son of Kronos by sleep and the pleasures of the couch.

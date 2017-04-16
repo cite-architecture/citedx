@@ -8,11 +8,25 @@ See the documentation in the [docs directory](docs).
 
 ## Data sets
 
-- `million.cex`. A demonstration file containing texts in Arabic, Greek, Latin, English, and German.
-- `croala-selections.cex`. A demonstration file containing Latin texts from the Croatiae Auctores Latini project, Neven Jovanović, ed.
-- `metrical-summaries.cex`. A library of the one-line poetic summaries of the books of the Homeric Iliad, from CroALa and the Homer Multitext.
-- `hmt-scholia-onormal.cex`. Orthographically normalized edition of scholia from 18 books of the Venetus A (Marcianus Graecus 822), edited by the Homer Multitext.
+Files in the `libraries` directory have passed validation testing. (See
+the following section on how to validate your own files).  Files
+in the `invalid` directory have been submitted but do not yet fully
+pass validation.
 
-## Contributing
+To pass validation, the CEX must be syntactically correct.  That is, it must use only valid CEX block labels, and must include a `#!citelibrary` block.
 
-This repository encourages contributions by means of pull-requests to this GitHub repository.
+In addition, for libraries that include a text repository, the referential integrity of the repository is validated as follows:
+
+- all URNs identifying  citable texts in the repository's catalog must be unique
+- all URNs identifying citable passages in the repository's data block must be unique
+- there must be a 1<->1 correspondence between works cataloged as being online and works appearing in the citable data block
+
+
+## Validation, and contributing your libraries
+
+The `validator` directory includes a scala build file and short script to validate all files in the `libraries` directory with file names ending in `.cex`.  You must have scala and sbt installed to run it as follows:
+
+1. within the `validator` directory, start an sbt console session: `sbt console`
+2. load and run the script:  `:load validate.sc`
+
+You can test your own `.cex` files by dropping them in the libraries directory and running the script.  We encourages you to submit any valid libraries by means of pull-requests to this GitHub repository.
