@@ -8,10 +8,8 @@ See the documentation in the [docs directory](docs).
 
 ## Freely reusable data sets
 
-Files in the `libraries` directory have passed validation testing. (See
-the following section on how to validate your own files).  Files
-in the `invalid` directory have been submitted but do not yet fully
-pass validation.
+All files in the `libraries` directory have passed an automated validation. (See
+the following section on how to validate your own files). 
 
 To pass validation, the CEX must be syntactically correct.  That is, it must use only valid CEX block labels, and must include a `#!citelibrary` block.
 
