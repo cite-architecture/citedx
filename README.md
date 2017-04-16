@@ -27,4 +27,4 @@ The `validator` directory includes a scala build file and short script to valida
 1. within the `validator` directory, start an sbt console session: `sbt console`
 2. load and run the script:  `:load validate.sc`
 
-You can test your own `.cex` files by dropping them in the libraries directory and running the script.  We encourages you to submit any valid libraries by means of pull-requests to this GitHub repository.
+You can test your own `.cex` files by dropping them in the libraries directory and running the script.  We encourage you to submit any valid libraries by means of pull-requests to this GitHub repository.
