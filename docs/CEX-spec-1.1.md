@@ -62,7 +62,7 @@ The `citelibrary` block contains three content lines with metadata about the ent
 
 - `name`: a human-readable name or label for this data set
 - `urn`: a CITE2 URN uniquely identifying this library
-- `license`: a licensing statement
+- `license`: a licensing statement describing rights to use the entire library, as a unit.  Individual components may have more permissive licenses.
 
 **Example**:  The following example is a valid `citelibrary` block.  It includes empty lines and a comment lines, in addition to the three required key-value pairs.
 
@@ -121,16 +121,47 @@ The `ctsdata` block contains a two-column representation of a citable text in th
 
 ### `citecatalog`
 
-The `citecatalog` contains delimited text documenting the structure of citable collections of data.  Within this block, statements are of one of two kinds, identified by the first column:  `collection` lines document a single collection;  `property` lines document 
+The `citecatalog` contains delimited text documenting the structure of citable collections of data.  Within this block, statements are of one of two kinds, identified by the first column:  `collection` lines document a single collection;  `property` lines document.
+
+The keyword `collection` is followed by four further columns of delimited text data.  These give, in order:
+
+1. The URN of the collection
+2. A label for the collection
+3. The URN of the property definining labels for each object in the collection.
+4. A rights statement applying to the contents of the collection.
+
+The keyword `property` is followed fourt further columns of delimited text data.  These give, in order:
+
+1. The URN of the property
+2. A label for the property
+3. The data type of the property.  Valid values for data type are `String`,`CtsUrn`,`Cite2Urn`,`Number` and `Boolean`.
+4. An optional list of controlled vocabulary items for a `String` type.  These are separated by a secondary delimiter that does not occur elsewhere in the value of this property.
+
+Every collection must have one property with property identifier `urn`;  its type must be `Cite2Urn`; and all values given for the `urn` property in the `citedata` block must be unique within that collection.
 
 
-**Example**:
 
+**Example**: This example defines a collection with three properties. The delimiting string is `#`; the secondary delimiter is `,`.   In addition to the required `urn` property, there are two properties of `String` type.  The string property labelled "License for binary image data" has a controlled vocabulary list with two comma-delimited items.
+
+
+        #!citecatalog
+        collection#urn:cite2:hmt:vaimg.v1:#Images of the Venetus A manuscriptscript#urn:cite2:hmt:vaimg.v1.caption:##CC-attribution-share-alike
+
+        property#urn:cite2:hmt:msA.v1.urn:#Image URN#Cite2Urn#
+        property#urn:cite2:hmt:msA.v1.caption:#Caption#String#
+        property#urn:cite2:hmt:msA.v1.rights:#License for binary image data#String#CC-attribution-share-alike,public domain
 
 
 ### `citedata`
 
-TBA
+MUST BE ACCOMPANIED BY catalog block.
+
+**Example**:
+
+
+        #!citedata
+        URN,Caption,Rights
+        urn:cite2:hmt:vaimg.v1:IMG1#Folio 1r of the Venetus A, photographed in natural light#CC-attribution-share-alike
 
 
 ### `imagedata`
