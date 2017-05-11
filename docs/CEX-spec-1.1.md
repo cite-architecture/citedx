@@ -1,5 +1,9 @@
 # The CITE Exchange (CEX) format
 
+## Status
+
+**DRAFT** status.
+
 
 ## Versions
 
@@ -184,7 +188,17 @@ Subsequent content lines give data values for a single object.  Data values in e
 
 ### `imagedata`
 
-TBA
+
+**Example**:   The following example is a valid `imagedata` block, using `#` for its delimiting string.
+
+    #!imagedata
+
+    # Lines are structured as:
+    # collection,protocol,base url,rights property
+
+    urn:cite2:hmt:vaimg.v1:,CITE image,http://www.homermultitext.org/hmtdigital/images?,urn:cite2:hmt:msA.v1.rights:
+    urn:cite2:hmt:vaimg.v1:,IIIF,http://www.homermultitext.org/image2/context.json,urn:cite2:hmt:msA.v1.rights:
+    urn:cite2:hmt:vaimg.v1:,local file,file://./images,urn:cite2:hmt:msA.v1.rights:
 
 ### `relations`
 

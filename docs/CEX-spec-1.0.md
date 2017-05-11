@@ -1,6 +1,11 @@
 # The CITE Exchange (CEX) format
 
 
+## Status
+
+Final status.  Superseded by version 1.1.
+
+
 ## Versions
 
 This document specifies version **1.0** of the CITE Exchange format.  Version numbers follow [semantic versioning guidelines](http://semver.org/).
@@ -113,7 +118,7 @@ The `ctsdata` block contains a two-column representation of a citable text in th
 **Example**:
 
     # Valid CTS data.  "#" is the column delimiter
-    
+
     urn:cts:greekLit:tlg5026.msA.hmt:1.2.lemma#μῆνις
     urn:cts:greekLit:tlg5026.msA.hmt:1.2.comment#παρὰ τὸ μένω μῆνις ὡς ἐνὸς ἦνις· οἱ δὲ περὶ Γλαύκωνα τὸν Ταρσέα ἠξίουν ὀξύνειν τὸ ὄνομα οὐκ ὀρθῶς.
 
