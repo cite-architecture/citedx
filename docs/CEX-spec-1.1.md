@@ -9,7 +9,7 @@ This document specifies version **1.1** of the CITE Exchange format.  Version nu
 
 The CITE Exchange format is a plain-text, line-oriented data format for serializing citable content following the models of the CITE Architecture.  Distinct types of content are grouped in separate labelled blocks, as specified below, so that a single CEX source can integrate *any* content citable in the CITE Architecture.
 
-All blocks are optional. Authors  may  limit a CEX serialization to include only those kinds of citable content they choose.  A null string or empty text file is a syntactically valid, although empty, CEX data serialization.
+All blocks are optional (although the `citedata` block may only be used in conjunction with a `citecatalog` block:  see details below). Authors  may  limit a CEX serialization to include only those kinds of citable content they choose.  A null string or empty text file is a syntactically valid, although empty, CEX data serialization.
 
 ## Syntax of the CEX source: blocks and block labels
 
@@ -49,12 +49,12 @@ The syntax of block contents is specific to the type of the block.
 
 The `cexversion` block contains a single content line with a string identifying the version of the CITE Exchange format followed  in this CEX source.
 
-**Example**:  The following example is a valid `cexversion` block.  It includes an empty line and a comment line, but only one content line, specifying the version of the CEX data format.
+**Example**:  The following example is a valid `cexversion` block, using `#` for its delimiting string.  It includes an empty line and a comment line, but only one content line, specifying the version of the CEX data format.
 
     #!cexversion
 
-    # note: starting out with version 1.0
-    1.0
+    # note: currently using version 1.1
+    1.1
 
 ### `citelibrary`
 
@@ -64,7 +64,7 @@ The `citelibrary` block contains three content lines with metadata about the ent
 - `urn`: a CITE2 URN uniquely identifying this library
 - `license`: a licensing statement describing rights to use the entire library, as a unit.  Individual components may have more permissive licenses.
 
-**Example**:  The following example is a valid `citelibrary` block.  It includes empty lines and a comment lines, in addition to the three required key-value pairs.
+**Example**:  The following example is a valid `citelibrary` block, using `#` for its delimiting string.  It includes empty lines and comment lines, in addition to the three required key-value pairs.
 
     #!citelibrary
 
@@ -93,7 +93,7 @@ The `ctscatalog` block contains a table with minimal cataloging data about one o
 
 Note that it is possible to catalog texts that are not online.  Within a CEX serialization, cataloging a work as online means that citable texts nodes for this CTS URN must be available in the `ctsdata` block of the CEX.
 
-**Example**:
+**Example**:  The following example is a valid `ctscatalog` block, using `#` for its delimiting string.  It defines a version of a text:  note that the column for exemplar label is empty.
 
     #!ctscatalog
 
@@ -110,9 +110,10 @@ Note that it is possible to catalog texts that are not online.  Within a CEX ser
 
 The `ctsdata` block contains a two-column representation of a citable text in the OHCO2 model.  Columns are separated by a string delimiter that does not otherwise appear in content lines of the block.  The first column gives the CTS URN for a citable node; the second column gives it text contents.  Within a given citable version or exemplar, nodes must be in document order.
 
-**Example**:
+**Example**: The following example is a valid `ctscatalog` block, using `#` for its delimiting string.  It defines two citable nodes of text.
 
-    # Valid CTS data.  "#" is the column delimiter
+    #!ctscatalog
+    # CTS data:  "#" is the column delimiter.
 
     urn:cts:greekLit:tlg5026.msA.hmt:1.2.lemma#μῆνις
     urn:cts:greekLit:tlg5026.msA.hmt:1.2.comment#παρὰ τὸ μένω μῆνις ὡς ἐνὸς ἦνις· οἱ δὲ περὶ Γλαύκωνα τὸν Ταρσέα ἠξίουν ὀξύνειν τὸ ὄνομα οὐκ ὀρθῶς.
@@ -121,47 +122,64 @@ The `ctsdata` block contains a two-column representation of a citable text in th
 
 ### `citecatalog`
 
-The `citecatalog` contains delimited text documenting the structure of citable collections of data.  Within this block, statements are of one of two kinds, identified by the first column:  `collection` lines document a single collection;  `property` lines document.
+The `citecatalog` contains delimited text documenting the structure of one or more citable collections of data.  Within this block, statements are of one of two kinds, identified by the first column:  `collection` lines document a single collection;  `property` lines document a specific property in a collection represented by a `collection` line.
 
-The keyword `collection` is followed by four further columns of delimited text data.  These give, in order:
+In `collection` lines, the initial keyword is followed by four further columns of delimited text data.  These give, in order:
 
 1. The URN of the collection
 2. A label for the collection
 3. The URN of the property definining labels for each object in the collection.
 4. A rights statement applying to the contents of the collection.
 
-The keyword `property` is followed fourt further columns of delimited text data.  These give, in order:
+In `property` lines, the initial keyword is followed by four further columns of delimited text data.  These give, in order:
 
 1. The URN of the property
 2. A label for the property
 3. The data type of the property.  Valid values for data type are `String`,`CtsUrn`,`Cite2Urn`,`Number` and `Boolean`.
 4. An optional list of controlled vocabulary items for a `String` type.  These are separated by a secondary delimiter that does not occur elsewhere in the value of this property.
 
-Every collection must have one property with property identifier `urn`;  its type must be `Cite2Urn`; and all values given for the `urn` property in the `citedata` block must be unique within that collection.
+Every collection must have one property with property identifier `urn`;  its type must be `Cite2Urn`.
 
 
 
-**Example**: This example defines a collection with three properties. The delimiting string is `#`; the secondary delimiter is `,`.   In addition to the required `urn` property, there are two properties of `String` type.  The string property labelled "License for binary image data" has a controlled vocabulary list with two comma-delimited items.
+**Example**: The following example is a valid `citecatalog` block, using `#` for its delimiting string, and `,` for its secondary delimiter for controlled vocabulary lists.  It defines a collection with three properties.  In addition to the required `urn` property, there are two properties of `String` type.  The string property labelled "License for binary image data" has a controlled vocabulary list with two comma-delimited items.
 
 
-        #!citecatalog
-        collection#urn:cite2:hmt:vaimg.v1:#Images of the Venetus A manuscriptscript#urn:cite2:hmt:vaimg.v1.caption:##CC-attribution-share-alike
 
-        property#urn:cite2:hmt:msA.v1.urn:#Image URN#Cite2Urn#
-        property#urn:cite2:hmt:msA.v1.caption:#Caption#String#
-        property#urn:cite2:hmt:msA.v1.rights:#License for binary image data#String#CC-attribution-share-alike,public domain
+    #!citecatalog
+
+    collection#urn:cite2:hmt:vaimg.v1:#Images of the Venetus A manuscriptscript#urn:cite2:hmt:vaimg.v1.caption:##CC-attribution-share-alike
+
+    property#urn:cite2:hmt:msA.v1.urn:#Image URN#Cite2Urn#
+    property#urn:cite2:hmt:msA.v1.caption:#Caption#String#
+    property#urn:cite2:hmt:msA.v1.rights:#License for binary image data#String#CC-attribution-share-alike,public domain
 
 
 ### `citedata`
 
-MUST BE ACCOMPANIED BY catalog block.
+The `citedata` block contains delimited text records for objects in a single CITE Collection.  A CEX source documenting multiple CITE Collections will therefore have one `citedata` block for each collection.  The collection represented by the `citedata` block must be documented by content in a `citecatalog` block defining its structure.  (On the other hand, the `citecatalog` block may define the structure of collections with no data in a `citedata` block.)
 
-**Example**:
+The first content line of the `citedata` block is a header line identifying the property defined in the `citecatalog` block that is represented in this column.  The property identifier in the header line must match the property identifier of the catalog's property URN, in a case-insensitivie match.  Any of the headers `URN`, `Urn` or `urn` will match the required `urn` property of the collection, for example.
+
+Subsequent content lines give data values for a single object.  Data values in each delimited column must be correct string serializations of that data type, as follows:
+
+- `String` data type:  The value may be any string not containing the delimiting string used in this CEX source, unless the property is defined with a controlled vocabulary list.  In that case, the value must be one of the string values defined in the catalog.
+- `CtsUrn` data type: The value must be a valid string representation of a Cts URN.
+- `Cite2Urn` data type: The value must be a valid string representation of a CITE2 URN.  (See this [introduction to the CITE2 URN type](http://cite-architecture.github.io/2017/02/02/cite2urn_update/).)
+- `Boolean` data type:  The value must be one of the strings `true` or `false`.
+- `Number` data type: For integers, the value must be a string of digit characters representing a base-ten integer.  For non-integral values, the text representation must begin with a string of digit characters representing a base-ten integer  or `0`, followed by a decimal point `.`, followed by a string of digit characters representing decimal digits.
 
 
-        #!citedata
-        URN,Caption,Rights
-        urn:cite2:hmt:vaimg.v1:IMG1#Folio 1r of the Venetus A, photographed in natural light#CC-attribution-share-alike
+ Values for the required `urn` property must be unique within a collection.
+
+**Example**:   The following example is a valid `citedata` block, using `#` for its delimiting string.  It defines a single object with three properties.  The values in each column are valid for the property definitions in the example `citecatalog` block above.
+
+
+    #!citedata
+    # Images of the Venetus A manuscript:
+
+    URN#Caption#Rights
+    urn:cite2:hmt:vaimg.v1:IMG1#Folio 1r of the Venetus A# photographed in natural light#CC-attribution-share-alike
 
 
 ### `imagedata`
