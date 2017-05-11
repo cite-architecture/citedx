@@ -188,17 +188,33 @@ Subsequent content lines give data values for a single object.  Data values in e
 
 ### `imagedata`
 
+The CITE Image extension extends a collection to support working with binary image data.  Content lines are composed of four columns:
 
-**Example**:   The following example is a valid `imagedata` block, using `#` for its delimiting string.
+1. The URN of the extended collection.
+2. The protocol used for access to binary image data.  As of version 1.1 of the CEX specification, possible values are not enumerated, but we recommend the following set of values:
+    - `CITE image` for the REST API of the CITE Image service
+    - `IIIF` for the API of the International Image Ineroperability Framework
+    - `local file` for image data stored as files in a local file system
+3. A base URL for access to binary image data.  The meaning and form of this will depend on the protocol selected.  As of version 1.1 of the CEX specification we recommend the following:
+    - For the `CITE image` protocol, a base URL to which CITE Image API requests can be appended.
+    - For the `IIIF` protocol, the URL of the context definition of the service.
+    - For the `local file` protocol, a relative URL to a base directory for a file system tree.  The base directory should contain one subdirectory for each collection, and within each subdirectory one image source for each object.
+4. The URN of a property in the collection stating the license for the binary image data.
+
+Note that it is possible to extend a single image collection with multiple protocols, each represented by a single line in the `imagedata` block.   Since the CEX structure identifies a property with licensing data for each protocol, it is equally possible to have the same license apply to all forms of binary access, or to document protocol-specific licensing for each image.
+
+
+
+**Example**:   The following example is a valid `imagedata` block, using `#` for its delimiting string.  It extends a single CITE Collection with data about images for use with three different protocols for using binary image data.  The same licensing information is applied to all three forms of binary data access.
 
     #!imagedata
 
     # Lines are structured as:
-    # collection,protocol,base url,rights property
+    # collection#protocol#base URL#rights property
 
-    urn:cite2:hmt:vaimg.v1:,CITE image,http://www.homermultitext.org/hmtdigital/images?,urn:cite2:hmt:msA.v1.rights:
-    urn:cite2:hmt:vaimg.v1:,IIIF,http://www.homermultitext.org/image2/context.json,urn:cite2:hmt:msA.v1.rights:
-    urn:cite2:hmt:vaimg.v1:,local file,file://./images,urn:cite2:hmt:msA.v1.rights:
+    urn:cite2:hmt:vaimg.v1:#CITE image#http://www.homermultitext.org/hmtdigital/images?#urn:cite2:hmt:msA.v1.rights:
+    urn:cite2:hmt:vaimg.v1:#IIIF#http://www.homermultitext.org/image2/context.json#urn:cite2:hmt:msA.v1.rights:
+    urn:cite2:hmt:vaimg.v1:#local file#file://./images#urn:cite2:hmt:msA.v1.rights:
 
 ### `relations`
 
