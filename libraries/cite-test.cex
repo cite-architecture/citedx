@@ -1,10 +1,10 @@
-# Library of texts demonstrating CTS
+# Library of texts for testing CITE Collections
 # The pound sign "#" is used as a column divider.
 #!cexversion
 1.1
 #!citelibrary
-name#CTS-Demonstration 2017
-urn#urn:cite2:furman:cex.2017a:croala_demo
+name#CITE-Test
+urn#urn:cite2:furman:cex.2017a:cite_test
 license#Creative Commons Attribution Share Alike
 #!ctscatalog
 urn#citationScheme#groupName#workTitle#versionLabel#exemplarLabel#online
