@@ -15,7 +15,7 @@ for (cex <- cexFiles) {
   count = count + 1
   try {
     val cexData = Source.fromFile("../libraries/" + cex.getName).getLines.mkString("\n")
-    val citeLib = CiteLibrary(cexData,"#")
+    val citeLib = CiteLibrary(cexData,"#",",")
     println(s"""${count}. ${cex.getName} validates.""")
   } catch {
     case exc : Throwable => println(cex.getName + " fails:  " + exc.getMessage() + "\n\n")

@@ -8,5 +8,5 @@ resolvers += "beta" at "http://beta.hpcc.uh.edu/nexus/content/repositories/relea
 libraryDependencies ++=   Seq(
   "edu.holycross.shot.cite" %% "xcite" % "2.2.3",
   "edu.holycross.shot" %% "ohco2" % "8.0.1",
-  "edu.holycross.shot" %% "scm" % "2.1.2"
+  "edu.holycross.shot" %% "scm" % "3.0.1"
 )
