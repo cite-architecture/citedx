@@ -1500,12 +1500,27 @@ urn:cts:greekLit:tlg0012.tlg001.allen:2.876#Σαρπηδὼν δ᾽ ἦρχεν 
 urn:cts:greekLit:tlg0012.tlg001.allen:2.877#τηλόθεν ἐκ Λυκίης, Ξάνθου ἄπο δινήεντος. 
 #!citecatalog
 collection#urn:cite2:hmt:msA.v1:#Pages of the Venetus A manuscript#urn:cite2:hmt:msA.v1.label:#urn:cite2:hmt:msA.v1.sequence:#CC-attribution-share-alike
+collection#urn:cite2:hmt:vaimg.v1:#Images of the Venetus A manuscript#urn:cite2:hmt:vaimg.v1.label:##CC-attribution-share-alike
+
 property#urn:cite2:hmt:msA.v1.urn:#URN#Cite2Urn#
 property#urn:cite2:hmt:msA.v1.label:#Label#String#
 property#urn:cite2:hmt:msA.v1.siglum:#Manuscript siglum#String#
 property#urn:cite2:hmt:msA.v1.sequence:#Page sequence#Number#
 property#urn:cite2:hmt:msA.v1.rv:#Recto or Verso#String#recto,verso
 property#urn:cite2:hmt:msA.v1.codex:#Codex URN#Cite2Urn#
+
+property#urn:cite2:hmt:vaimg.v1.urn:#URN#Cite2Urn#
+property#urn:cite2:hmt:vaimg.v1.label:#Label#String#
+property#urn:cite2:hmt:vaimg.v1.rights:#Rights#String#
+
 #!citedata
 siglum#sequence#urn#rv#label#codex
 msA#1#urn:cite2:hmt:msA.v1:1r#recto#Marcianus Graecus Z. 454 (= 822) (Venetus A) folio 1r#urn:cite2:hmt:codex:msA
+msA#2#urn:cite2:hmt:msA.v1:1v#verso#Marcianus Graecus Z. 454 (= 822) (Venetus A) folio 1v#urn:cite2:hmt:codex:msA
+msA#3#urn:cite2:hmt:msA.v1:2r#recto#Marcianus Graecus Z. 454 (= 822) (Venetus A) folio 2r#urn:cite2:hmt:codex:msA
+
+#!citedata
+urn#label#rights
+urn:cite2:hmt:vaimg.v1:VA012RN_0013#Venetus A: Marcianus Graecus Z. 454 (= 822), folio 12, recto.#CC-attribution-share-alike
+urn:cite2:hmt:vaimg.v1:VA012VN_0514#Venetus A: Marcianus Graecus Z. 454 (= 822), folio 12, verso.#CC-attribution-share-alike
+urn:cite2:hmt:vaimg.v1:VA013RN_0014#Venetus A: Marcianus Graecus Z. 454 (= 822), folio 13, recto.#CC-attribution-share-alike
