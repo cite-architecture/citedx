@@ -2,18 +2,18 @@
 
 ## Status
 
-Final status.  Superseded by version 1.2.
+**DRAFT** status.
 
 
 ## Versions
 
-This document specifies version **1.1** of the CITE Exchange format.  Version numbers follow [semantic versioning guidelines](http://semver.org/).
+This document specifies version **1.2** of the CITE Exchange format.  Version numbers follow [semantic versioning guidelines](http://semver.org/).
 
 ## What it is
 
 The CITE Exchange format is a plain-text, line-oriented data format for serializing citable content following the models of the CITE Architecture.  Distinct types of content are grouped in separate labelled blocks, as specified below, so that a single CEX source can integrate *any* content citable in the CITE Architecture.
 
-All blocks are optional (although the `citedata` block may only be used in conjunction with a `citecatalog` block:  see details below). Authors  may  limit a CEX serialization to include only those kinds of citable content they choose.  A null string or empty text file is a syntactically valid, although empty, CEX data serialization.
+Blocks are optional (although the `citedata`, `imagedata`, `relation` and `orca` blocks require the presence of one or more other blocks:  see details below). Authors  may  limit a CEX serialization to include only those kinds of citable content they choose.  A null string or empty text file is a syntactically valid, although empty, CEX data serialization.
 
 ## Syntax of the CEX source: blocks and block labels
 
@@ -57,8 +57,8 @@ The `cexversion` block contains a single content line with a string identifying 
 
     #!cexversion
 
-    # note: currently using version 1.1
-    1.1
+    # note: currently using version 1.2
+    1.2
 
 ### `citelibrary`
 
@@ -188,7 +188,7 @@ Subsequent content lines give data values for a single object.  Data values in e
 
 ### `imagedata`
 
-The CITE Image extension extends a collection to support working with binary image data.  Content lines are composed of four columns:
+The CITE Image extension extends a collection to support working with binary image data. A CEX source including an `imagedata` block must therefore also include  `citecatalog` and `citedata` blocks.   Content lines of the `imagedata` block are composed of four columns:
 
 1. The URN of the extended collection.
 2. The protocol used for access to binary image data.  As of version 1.1 of the CEX specification, possible values are not enumerated, but we recommend the following set of values:
@@ -218,7 +218,18 @@ Note that it is possible to extend a single image collection with multiple proto
 
 ### `relations`
 
-TBA
+Content lines in the `relations` block relate two citable objects in S-V-O statements. The S-V-O statement is represented as three columns of delimited text, with columns separated by a string delimiter that does not otherwise appear in content lines of the block.
+
+The subject and object elements of each statement must be URN values (either CITE2 URNs, or CTS URNs).  The verb of each statement must be a CITE2 URN.  It must therefore include a `citecatalog` and `citedata` block.  If the `relations` block includes statements about `CTS` URNs, it must also include `ctscatalog` and `ctsdata` blocks.
+
+**Example**:  The following example is a valid `relations` block.  Its two content lines are symmetrical statements describing the relations between two objects, a text passage and a page of a manuscript. 
+
+    #!relations
+
+    urn:cts:greekLit:tlg0012.tlg001.msA:1.1-1.25#urn:cite2:dse:verbs.v1:appearsOn:#urn:cite2:hmt:msA.v1:12r
+    urn:cite2:hmt:msA.v1:12r#urn:cite2:dse:verbs.v1:hasOnit:#urn:cts:greekLit:tlg0012.tlg001.msA:1.1-1.25
+
+
 
 ### `orca`
 
