@@ -2,6 +2,8 @@
 
 A repository for openly licensed libraries of data in valid `.cex` format. Licensing information is included in each `.cex` file;  additional details are provided in [libraries/LICENSE.markdown](libraries/LICENSE.markdown).
 
+The **Sandbox** branch of this repository contains experimental `.cex` files, used for testing libraries, services, and applications. **These are not scholarly data, even if they are “valid” `.cex` files~**
+
 ## The CITE Exchange format
 
 Specifications of the CITE Exchange format are available in the [docs directory](docs).
