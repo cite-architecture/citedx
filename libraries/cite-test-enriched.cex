@@ -1520,10 +1520,10 @@ siglum#sequence#urn#rv#label#codex#text#image
 msA#1#urn:cite2:hmt:msA.v1:1r#recto#Marcianus Graecus Z. 454 (= 822) (Venetus A) folio 1r#urn:cite2:hmt:codex:msA#urn:cts:greeklit:tlg0012.tlg001.allen:1.1-1.25#urn:cite2:hmt:vaimg.v1:VA012RN_0013
 msA#2#urn:cite2:hmt:msA.v1:1v#verso#Marcianus Graecus Z. 454 (= 822) (Venetus A) folio 1v#urn:cite2:hmt:codex:msA#urn:cts:greeklit:tlg0012.tlg001.allen:1.26-1.50#urn:cite2:hmt:vaimg.v1:VA012VN_0514
 msA#3#urn:cite2:hmt:msA.v1:2r#recto#Marcianus Graecus Z. 454 (= 822) (Venetus A) folio 2r#urn:cite2:hmt:codex:msA#urn:cts:greeklit:tlg0012.tlg001.allen:1.51-1.75#urn:cite2:hmt:vaimg.v1:VA013RN_0014
-msA#4#urn:cite2:hmt:msA.v1:2v#verso#Marcianus Graecus Z. 454 (= 822) (Venetus A) folio 2v#urn:cite2:hmt:codex:msA#urn:cts:greeklit:tlg0012.tlg001.msA:1.76-1.100#urn:cite2:hmt:vaimg.v1:img4
-msA#5#urn:cite2:hmt:msA.v1:3r#recto#Marcianus Graecus Z. 454 (= 822) (Venetus A) folio 3r#urn:cite2:hmt:codex:msA#urn:cts:greeklit:tlg0012.tlg001.msA:1.101-1.125#urn:cite2:hmt:vaimg.v1:img5
-msA#6#urn:cite2:hmt:msA.v1:3v#verso#Marcianus Graecus Z. 454 (= 822) (Venetus A) folio 3v#urn:cite2:hmt:codex:msA#urn:cts:greeklit:tlg0012.tlg001:1.126-1.150#urn:cite2:hmt:vaimg.v1:img6
-msA#7#urn:cite2:hmt:msA.v1:4r#verso#Marcianus Graecus Z. 454 (= 822) (Venetus A) folio 4r#urn:cite2:hmt:codex:msA#urn:cts:greeklit:tlg0012.tlg001:1.151-1.175#urn:cite2:hmt:vaimg.v1:img7
+msA#4#urn:cite2:hmt:msA.v1:2v#verso#Marcianus Graecus Z. 454 (= 822) (Venetus A) folio 2v#urn:cite2:hmt:codex:msA#urn:cts:greeklit:tlg0012.tlg001.msA:1.76-1.100#urn:cite2:hmt:vaimg.v1:VA013VN_0515
+msA#5#urn:cite2:hmt:msA.v1:3r#recto#Marcianus Graecus Z. 454 (= 822) (Venetus A) folio 3r#urn:cite2:hmt:codex:msA#urn:cts:greeklit:tlg0012.tlg001.msA:1.101-1.125#urn:cite2:hmt:vaimg.v1:VA014RN_0015
+msA#6#urn:cite2:hmt:msA.v1:3v#verso#Marcianus Graecus Z. 454 (= 822) (Venetus A) folio 3v#urn:cite2:hmt:codex:msA#urn:cts:greeklit:tlg0012.tlg001:1.126-1.150#urn:cite2:hmt:vaimg.v1:VA014VN_0516
+msA#7#urn:cite2:hmt:msA.v1:4r#verso#Marcianus Graecus Z. 454 (= 822) (Venetus A) folio 4r#urn:cite2:hmt:codex:msA#urn:cts:greeklit:tlg0012.tlg001:1.151-1.175#urn:cite2:hmt:vaimg.v1:VA015RN_0016
 
 #!citedata
 urn#label#rights
