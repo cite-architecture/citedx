@@ -1519,7 +1519,7 @@ property#urn:cite2:hmt:vaimg.v1.rights:#Rights#String#
 
 #!citedata
 siglum#sequence#urn#rv#label#codex#text#image#imageROI
-msA#1#urn:cite2:hmt:msA.v1:1r#recto#Marcianus Graecus Z. 454 (= 822) (Venetus A) folio 1r#urn:cite2:hmt:codex:msA#urn:cts:greekLit:tlg0012.tlg001.allen:1.1-1.25#urn:cite2:hmt:vaimg.v1:VA012RN_0013#urn:cite2:hmt:vaimg.v1:VA012RN_0013@0.0551,0.2305,0.5115,0.494
+msA#1#urn:cite2:hmt:msA.v1:1r#recto#Marcianus Graecus Z. 454 (= 822) (Venetus A) folio 1r#urn:cite2:hmt:codex:msA#urn:cts:greekLit:tlg0012.tlg001.allen:1.1-1.25#urn:cite2:hmt:vaimg.v1:VA012RN_0013#urn:cite2:hmt:vaimg.v1:VA012RN_0013@0.208,0.2087,0.086,0.0225
 msA#2#urn:cite2:hmt:msA.v1:1v#verso#Marcianus Graecus Z. 454 (= 822) (Venetus A) folio 1v#urn:cite2:hmt:codex:msA#urn:cts:greekLit:tlg0012.tlg001.allen:1.26-1.50#urn:cite2:hmt:vaimg.v1:VA012VN_0514#urn:cite2:hmt:vaimg.v1:VA012VN_0514@0.4975,0.2141,0.3814,0.4793
 msA#3#urn:cite2:hmt:msA.v1:2r#recto#Marcianus Graecus Z. 454 (= 822) (Venetus A) folio 2r#urn:cite2:hmt:codex:msA#urn:cts:greekLit:tlg0012.tlg001.allen:1.51-1.75#urn:cite2:hmt:vaimg.v1:VA013RN_0014#urn:cite2:hmt:vaimg.v1:VA013RN_0014@0.1722,0.2329,0.3874,0.4793
 msA#4#urn:cite2:hmt:msA.v1:2v#verso#Marcianus Graecus Z. 454 (= 822) (Venetus A) folio 2v#urn:cite2:hmt:codex:msA#urn:cts:greekLit:tlg0012.tlg001.msA:1.76-1.100#urn:cite2:hmt:vaimg.v1:VA013VN_0515#urn:cite2:hmt:vaimg.v1:VA013VN_0515@0.4805,0.2239,0.3994,0.4763
