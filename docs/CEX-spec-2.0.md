@@ -2,12 +2,12 @@
 
 ## Status
 
-Final status.  Superseded by version 2.0.
+**DRAFT** status.
 
 
 ## Versions
 
-This document specifies version **1.2** of the CITE Exchange format.  Version numbers follow [semantic versioning guidelines](http://semver.org/).
+This document specifies version **2.0.0** of the CITE Exchange format.  Version numbers follow [semantic versioning guidelines](http://semver.org/).
 
 ## What it is
 
@@ -68,7 +68,11 @@ The `citelibrary` block contains three content lines with metadata about the ent
 - `urn`: a CITE2 URN uniquely identifying this library
 - `license`: a licensing statement describing rights to use the entire library, as a unit.  Individual components may have more permissive licenses.
 
-**Example**:  The following example is a valid `citelibrary` block, using `#` for its delimiting string.  It includes empty lines and comment lines, in addition to the three required key-value pairs.
+
+
+The `citelibrary` may optionally include one or more lines associating CITE namespace abbreviations with URIs.  The line is formatted as three delimited values:  the labelling string `namespace`, a string value used as a namespace abbreviation in the library's CTS of CITE2 URNs, and a URI value.
+
+**Example**:  The following example is a valid `citelibrary` block, using `#` for its delimiting string.  It includes empty lines and comment lines, in addition to the three required key-value pairs, and definitions for two namespace URIs.
 
     #!citelibrary
 
@@ -79,6 +83,11 @@ The `citelibrary` block contains three content lines with metadata about the ent
     name#Iliadic Metrical Summaries
     urn#urn:cite2:hmt:cex.2017_1:metsumm
     license#Creative Commons Attribution, Non-Commercial 4.0 License <https://creativecommons.org/licenses/by-nc/4.0/>.
+
+    # Optional namespace definitions
+    namespace#hmt#http://www.homermultitext.org/citens/hmt
+    namespace#greekLit#http://chs.harvard.edu/ctsns/greekLit
+    
 
 
 ### `ctscatalog`
