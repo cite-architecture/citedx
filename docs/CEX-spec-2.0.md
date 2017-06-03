@@ -87,7 +87,7 @@ The `citelibrary` may optionally include one or more lines associating CITE name
     # Optional namespace definitions
     namespace#hmt#http://www.homermultitext.org/citens/hmt
     namespace#greekLit#http://chs.harvard.edu/ctsns/greekLit
-    
+
 
 
 ### `ctscatalog`
@@ -102,6 +102,7 @@ The `ctscatalog` block contains a table with minimal cataloging data about one o
 5. label of the edition or translation
 6. label of the specific exemplar, if any
 7. whether the work is online: `true` or `false`
+8. the language of the version or exemplar. The value should a three-letter language code from ISO 639-2.
 
 
 Note that it is possible to catalog texts that are not online.  Within a CEX serialization, cataloging a work as online means that citable texts nodes for this CTS URN must be available in the `ctsdata` block of the CEX.
@@ -115,7 +116,7 @@ Note that it is possible to catalog texts that are not online.  Within a CEX ser
     # specific exemplar of this edition.
 
     urn#citationScheme#groupName#workTitle#versionLabel#exemplarLabel#online
-    urn:cts:greekLit:tlg5026.msA.hmt:#book/comment/section#Scholia Vetera in Iliadem#Main scholia to Venetus A#Homer Multitext##true
+    urn:cts:greekLit:tlg5026.msA.hmt:#book/comment/section#Scholia Vetera in Iliadem#Main scholia to Venetus A#Homer Multitext##true#grc
 
 
 ### `ctsdata`
