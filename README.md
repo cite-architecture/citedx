@@ -10,6 +10,7 @@ The latest release version of the specification is [version **1.0**](docs/CEX-sp
 
 The current draft version of the specification is [version **1.1**](docs/CEX-spec-2.0.md).
 
+
 ## Freely reusable data sets
 
 All files in the `libraries` directory have passed an automated validation. (See
