@@ -13,7 +13,7 @@ The current draft version of the specification is [version **1.1**](docs/CEX-spe
 
 ## Freely reusable data sets
 
-All files in the `libraries` directory have passed an automated validation. (See
+All files in the `libraries` subdirectories have passed an automated validation. (See
 the following section on how to validate your own files).
 
 To pass validation, the CEX must be syntactically correct.  That is, it must use only valid CEX block labels, and must include a `#!citelibrary` block.
