@@ -1516,6 +1516,7 @@ property#urn:cite2:hmt:msA.v1.imageROI:#ImageROI#Cite2Urn#
 property#urn:cite2:hmt:vaimg.v1.urn:#URN#Cite2Urn#
 property#urn:cite2:hmt:vaimg.v1.label:#Label#String#
 property#urn:cite2:hmt:vaimg.v1.rights:#Rights#String#
+property#urn:cite2:hmt:vaimg.v1.rv:#Recto or Verso#String#front,back
 
 #!citedata
 siglum#sequence#urn#rv#label#codex#text#image#imageROI
@@ -1528,18 +1529,17 @@ msA#6#urn:cite2:hmt:msA.v1:3v#verso#Marcianus Graecus Z. 454 (= 822) (Venetus A)
 msA#7#urn:cite2:hmt:msA.v1:4r#verso#Marcianus Graecus Z. 454 (= 822) (Venetus A) folio 4r#urn:cite2:hmt:codex:msA#urn:cts:greekLit:tlg0012.tlg001:1.151-1.175#urn:cite2:hmt:vaimg.v1:VA015RN_0016#urn:cite2:hmt:vaimg.v1:VA015RN_0016@0.1782,0.2171,0.3954,0.4838
 
 #!citedata
-urn#label#rights
-urn:cite2:hmt:vaimg.v1:VA012RN_0013#Venetus A: Marcianus Graecus Z. 454 (= 822), folio 12, recto.#CC-attribution-share-alike
-urn:cite2:hmt:vaimg.v1:VA012VN_0514#Venetus A: Marcianus Graecus Z. 454 (= 822), folio 12, verso.#CC-attribution-share-alike
-urn:cite2:hmt:vaimg.v1:VA013RN_0014#Venetus A: Marcianus Graecus Z. 454 (= 822), folio 13, recto.#CC-attribution-share-alike
-urn:cite2:hmt:vaimg.v1:VA013VN_0515#Venetus A: Marcianus Graecus Z. 454 (= 822), folio 13, verso.#CC-attribution-share-alike
-urn:cite2:hmt:vaimg.v1:VA014RN_0015#Venetus A: Marcianus Graecus Z. 454 (= 822), folio 14, recto.#CC-attribution-share-alike
-urn:cite2:hmt:vaimg.v1:VA014VN_0516#Venetus A: Marcianus Graecus Z. 454 (= 822), folio 14, verso.#CC-attribution-share-alike
-urn:cite2:hmt:vaimg.v1:VA015RN_0016#Venetus A: Marcianus Graecus Z. 454 (= 822), folio 15, recto.#CC-attribution-share-alike
-urn:cite2:hmt:vaimg.v1:VA016RN_0017#Venetus A: Marcianus Graecus Z. 454 (= 822), folio 15, verso.#CC-attribution-share-alike
+urn#label#rights#rv
+urn:cite2:hmt:vaimg.v1:VA012RN_0013#Venetus A: Marcianus Graecus Z. 454 (= 822), folio 12, recto.#CC-attribution-share-alike#front
+urn:cite2:hmt:vaimg.v1:VA012VN_0514#Venetus A: Marcianus Graecus Z. 454 (= 822), folio 12, verso.#CC-attribution-share-alike#back
+urn:cite2:hmt:vaimg.v1:VA013RN_0014#Venetus A: Marcianus Graecus Z. 454 (= 822), folio 13, recto.#CC-attribution-share-alike#front
+urn:cite2:hmt:vaimg.v1:VA013VN_0515#Venetus A: Marcianus Graecus Z. 454 (= 822), folio 13, verso.#CC-attribution-share-alike#back
+urn:cite2:hmt:vaimg.v1:VA014RN_0015#Venetus A: Marcianus Graecus Z. 454 (= 822), folio 14, recto.#CC-attribution-share-alike#front
+urn:cite2:hmt:vaimg.v1:VA014VN_0516#Venetus A: Marcianus Graecus Z. 454 (= 822), folio 14, verso.#CC-attribution-share-alike#back
+urn:cite2:hmt:vaimg.v1:VA015RN_0016#Venetus A: Marcianus Graecus Z. 454 (= 822), folio 15, recto.#CC-attribution-share-alike#front
+urn:cite2:hmt:vaimg.v1:VA016RN_0017#Venetus A: Marcianus Graecus Z. 454 (= 822), folio 15, verso.#CC-attribution-share-alike#back
 
 #!imagedata
-
 
 urn:cite2:hmt:vaimg.v1:#local jpeg string#./image_archive/#urn:cite2:hmt:msA.v1.rights:
 urn:cite2:hmt:vaimg.v1:#local jpeg file#./image_archive#urn:cite2:hmt:msA.v1.rights:
