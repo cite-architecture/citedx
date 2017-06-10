@@ -2,14 +2,14 @@
 # THIS IS NOT SCHOLARLY DATA
 # The pound sign "#" is used as a column divider.
 #!cexversion
-1.1
+2.0
 #!citelibrary
 name#CITE-Test
 urn#urn:cite2:furman:cex.2017a:cite_test
 license#Creative Commons Attribution Share Alike
 #!ctscatalog
 urn#citationScheme#groupName#workTitle#versionLabel#exemplarLabel#online
-urn:cts:greekLit:tlg0012.tlg001.allen:#book/line#Homeric Epic#Iliad#Greek. Allen, ed. Perseus Digital Library. Creative Commons Attribution 3.0 License##true
+urn:cts:greekLit:tlg0012.tlg001.allen:#book/line#Homeric Epic#Iliad#Greek. Allen, ed. Perseus Digital Library. Creative Commons Attribution 3.0 License##true#grc
 #!ctsdata
 urn:cts:greekLit:tlg0012.tlg001.allen:1.1#Μῆνιν ἄειδε θεὰ Πηληϊάδεω Ἀχιλῆος 
 urn:cts:greekLit:tlg0012.tlg001.allen:1.2#οὐλομένην, ἣ μυρί᾽ Ἀχαιοῖς ἄλγε᾽ ἔθηκε, 
