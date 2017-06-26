@@ -2,12 +2,12 @@
 
 ## Status
 
-Final status.  Superseded by version 2.1.
+**Draft** status.
 
 
 ## Versions
 
-This document specifies version **2.0.0** of the CITE Exchange format.  Version numbers follow [semantic versioning guidelines](http://semver.org/).
+This document specifies version **2.1.0** of the CITE Exchange format.  Version numbers follow [semantic versioning guidelines](http://semver.org/).
 
 ## What it is
 
@@ -35,6 +35,7 @@ Valid block labels are:
 - `#!citecatalog`
 - `#!imagedata`
 - `#!relations`
+- `#!datamodels`
 
 
 ## Syntax of the CEX source: block contents
@@ -229,7 +230,7 @@ Note that it is possible to extend a single image collection with multiple proto
 
 Content lines in the `relations` block relate two citable objects in S-V-O statements. The S-V-O statement is represented as three columns of delimited text, with columns separated by a string delimiter that does not otherwise appear in content lines of the block.
 
-The subject and object elements of each statement must be URN values (either CITE2 URNs, or CTS URNs).  The verb of each statement must be a CITE2 URN.  It must therefore include a `citecatalog` and `citedata` block.  If the `relations` block includes statements about `CTS` URNs, it must also include `ctscatalog` and `ctsdata` blocks.
+The subject and object elements of each statement must be URN values (either CITE2 URNs, or CTS URNs).  The verb of each statement must be a CITE2 URN.  The CEX source must therefore include a `citecatalog` and `citedata` block.  If the `relations` block includes statements about `CTS` URNs, it must also include `ctscatalog` and `ctsdata` blocks.
 
 **Example**:  The following example is a valid `relations` block.  Its two content lines are symmetrical statements describing the relations between two objects, a text passage and a page of a manuscript.
 
@@ -237,3 +238,22 @@ The subject and object elements of each statement must be URN values (either CIT
 
     urn:cts:greekLit:tlg0012.tlg001.msA:1.1-1.25#urn:cite2:dse:verbs.v1:appearsOn:#urn:cite2:hmt:msA.v1:12r
     urn:cite2:hmt:msA.v1:12r#urn:cite2:dse:verbs.v1:hasOnit:#urn:cts:greekLit:tlg0012.tlg001.msA:1.1-1.25
+
+
+
+### `datamodels`
+
+Content lines in the `datamodels` block associate CITE Collections with externally defined data models. Collections are identified by a CITE2 URN; data models are identified by a CITE2 URN, and arevdescribed by both a brief label, and a fuller statement that may include references to sources of further information about the data model.  These four items are represented as columns of delimited text, with columns separated by a string delimiter that does not otherwise appear in content lines of the block.
+
+
+Collections identified in the `datamodel` block must be cataloged in a `citecatalog` block and instantiated in a `citedata` block.  The collection associated with a data model could be a collection of verbs relating objects in further collections in a `relations` block.
+
+
+**Example**:  The following example is a valid `datamodel` block.
+
+
+    #!datamodels
+
+    Collection#Model#Label#Description
+    urn:cite2:dse:verbs.v1:#urn:cite2:dse:verbs.v1:#DSE model#Diplomatic Scholarly Edition (DSE) model.  See documentation at <https://github.com/cite-architecture/dse>.
+    
