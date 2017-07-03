@@ -1,0 +1,70 @@
+#!cexversion
+2.1.0
+
+#!citelibrary
+name#Toy data  set to test DSE data model
+urn#urn:cite2:hmt:toys.2017a:toydse
+license#Public domain
+
+namespace#hmt#http://www.homermultitext.org/citens/hmt
+namespace#greekLit#http://chs.harvard.edu/ctsns/greekLit
+
+#!ctscatalog
+urn#citationScheme#groupName#workTitle#versionLabel#exemplarLabel#online#lang
+urn:cts:greekLit:tlg0012.tlg001.msA2017a:#book,line#Homeric Poetry#Iliad#Public Domain edition#Venetus A manuscript#true#grc
+
+#!ctsdata
+urn:cts:greekLit:tlg0012.tlg001.msA2017a:1.1#Μῆνιν ἄειδε θεὰ Πηληϊάδεω Ἀχιλῆος
+urn:cts:greekLit:tlg0012.tlg001.msA2017a:1.2#οὐλομένην· ἡ μυρί' Ἀχαιοῖς ἄλγε' ἔθηκεν·
+urn:cts:greekLit:tlg0012.tlg001.msA2017a:1.3#πολλὰς δ' ἰφθίμους ψυχὰς Ἄϊδι προΐαψεν
+urn:cts:greekLit:tlg0012.tlg001.msA2017a:1.4#ἡρώων· αὐτοὺς δὲ ἑλώρια τεῦχε κύνεσσιν
+urn:cts:greekLit:tlg0012.tlg001.msA2017a:1.5#οἰωνοῖσί τε πᾶσι· Διὸς δ' ἐτελείετο βουλή·
+
+
+#!citecatalog
+collection#urn:cite2:hmt:msA.2017a:#Pages of the Venetus A manuscriptscript#urn:cite2:hmt:msA.2017a.label:#urn:cite2:hmt:msA.2017a.sequence:#CC-attribution-share-alike
+
+property#urn:cite2:hmt:msA.2017a.urn:#URN#Cite2Urn#
+property#urn:cite2:hmt:msA.2017a.label:#Label#String#
+property#urn:cite2:hmt:msA.2017a.siglum:#Manuscript siglum#String#
+property#urn:cite2:hmt:msA.2017a.sequence:#Page sequence#Number#
+property#urn:cite2:hmt:msA.2017a.rv:#Recto or Verso#String#recto,verso
+property#urn:cite2:hmt:msA.2017a.codex:#Codex URN#Cite2Urn#
+
+collection#urn:cite2:hmt:vaimg.2017a:#Images of the Venetus A manuscriptscript#urn:cite2:hmt:vaimg.2017a.caption:#CC-attribution-share-alike
+
+property#urn:cite2:hmt:vaimg.2017a.urn:#URN#Cite2Urn#
+property#urn:cite2:hmt:vaimg.2017a.caption:#Caption#String#
+property#urn:cite2:hmt:vaimg.2017a.rights:#Rights#String#
+
+
+#!DSE
+collection#urn:cite:hmt:dseiliad.2017a:#Diplomatic scholarly edition of Venetus A Iliad#urn:cite:hmt:dseiliad.2017a:label#CC-attribution-share-alike
+
+property#urn:cite:hmt:dseiliad.2017a.urn:#URN#Cite2Urn#
+property#urn:cite:hmt:dseiliad.2017a.label:#Label#String#
+property#urn:cite:hmt:dseiliad.2017a.text:#Text passage#CtsUrn#
+property#urn:cite:hmt:dseiliad.2017a.image:#Documentary image#Cite2Urn#
+property#urn:cite:hmt:dseiliad.2017a.surface:#Physical surface#Cite2Urn#
+
+#!citedata
+siglum#sequence#urn#rv#label#codex
+msA#1#urn:cite2:hmt:msA.v1:12r#recto#Marcianus Graecus Z. 454 (= 822) (Venetus A) folio 12 recto#urn:cite2:hmt:codex:msA
+
+#!citedata
+urn#label#text#image#surface
+urn:cite:hmt:dseiliad.2017a:1_1#Context for Iliad 1.1#urn:cts:greekLit:tlg0012.tlg001.msA2017a:1.1#urn:cite:hmt:vaimg.2017a:VA012RN_0013@0.0611,0.2252,0.4675,0.0901#urn:cite2:hmt:msA.2017a:12r
+urn:cite:hmt:dseiliad.2017a:1_2#Context for Iliad 1.2#urn:cts:greekLit:tlg0012.tlg001.msA2017a:1.2#urn:cite:hmt:vaimg.2017a:VA012RN_0013@0.1632,0.2523,0.3323,0.0248#urn:cite2:hmt:msA.2017a:12r
+urn:cite:hmt:dseiliad.2017a:1_3#Context for Iliad 1.3#urn:cts:greekLit:tlg0012.tlg001.msA2017a:1.3#urn:cite:hmt:vaimg.2017a:VA012RN_0013@0.1642,0.2725,0.3323,0.0248#urn:cite2:hmt:msA.2017a:12r
+urn:cite:hmt:dseiliad.2017a:1_4#Context for Iliad 1.4#urn:cts:greekLit:tlg0012.tlg001.msA2017a:1.4#urn:cite:hmt:vaimg.2017a:VA012RN_0013@0.1652,0.2905,0.3463,0.0255#urn:cite2:hmt:msA.2017a:12r
+urn:cite:hmt:dseiliad.2017a:1_5#Context for Iliad 1.5#urn:cts:greekLit:tlg0012.tlg001.msA2017a:1.5#urn:cite:hmt:vaimg.2017a:VA012RN_0013@0.1632,0.3116,0.3273,0.0255#urn:cite2:hmt:msA.2017a:12r
+
+#!citedata
+urn#caption#rights
+urn:cite2:hmt:vaimg.2017a:VA012RN_0013.2017#Natural light photograph of Venetus A: Marcianus Graecus Z. 454 (= 822), folio 12, recto#This image was derived from an original ©2007, Biblioteca Nazionale Marciana, Venezie, Italia. The derivative image is ©2010, Center for Hellenic Studies. Original and derivative are licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 License. The CHS/Marciana Imaging Project was directed by David Jacobs of the British Library.
+
+
+
+#!datamodels
+urn:cite2:hmt:vaimg.2017a:#urn:cite2:cite:datamodels2017a:image#CITE Image data model.
+urn:cite2:cite:datamodels.2017a:dse#DSE model#Diplomatic Scholarly Edition (DSE) model.  See documentation at <https://github.com/cite-architecture/dse>.
