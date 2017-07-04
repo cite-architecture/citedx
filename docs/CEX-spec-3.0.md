@@ -142,8 +142,10 @@ In `collection` lines, the initial keyword is followed by four further columns o
 
 1. The URN of the collection
 2. A label for the collection
-3. The URN of the property definining labels for each object in the collection.
+3. An optional URN of the property definining labels for each object in the collection.  If none is defined, the default name of the property is `label`.
+4. An optional URN of the property defining the sequence of an ordered collection.  If none is defined, the collection is unordered.
 4. A rights statement applying to the contents of the collection.
+
 
 In `property` lines, the initial keyword is followed by four further columns of delimited text data.  These give, in order:
 
@@ -209,7 +211,7 @@ The CITE Image extension extends a collection to support working with binary ima
     - For the `CITE image` protocol, a base URL to which CITE Image API requests can be appended.
     - For the `IIIF` protocol, the URL of the context definition of the service.
     - For the `local file` protocol, a relative URL to a base directory for a file system tree.  The base directory should contain one subdirectory for each collection, and within each subdirectory one image source for each object.
-4.  The URN of a property in the collection stating the license for the binary image data. 
+4.  The URN of a property in the collection stating the license for the binary image data.
 
 Note that it is possible to extend a single image collection with multiple protocols, each represented by a single line in the `imagedata` block.   Since the CEX structure identifies a property with licensing data for each protocol, it is equally possible to have the same license apply to all forms of binary access, or to document protocol-specific licensing for each image.
 
