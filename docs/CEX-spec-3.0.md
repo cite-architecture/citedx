@@ -245,7 +245,7 @@ Note that it is possible to extend a single image collection with multiple proto
 
     urn:cite2:hmt:vaimg.v1:#CITE image#http://www.homermultitext.org/hmtdigital/images?
     urn:cite2:hmt:vaimg.v1:#IIIF#http://www.homermultitext.org/image2/context.json
-    urn:cite2:hmt:vaimg.v1:#local file
+    urn:cite2:hmt:vaimg.v1:#localDZ
 
 
 ### `relations`
