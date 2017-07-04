@@ -31,9 +31,9 @@ Valid block labels are:
 -   `#!citelibrary`
 -   `#!ctsdata`
 -   `#!ctscatalog`
--   `#!citedata`
 -   `#!citecollections`
 -   `#!citeproperties`
+-   `#!citedata`
 -   `#!imagedata`
 -   `#!relations`
 -   `#!datamodels`
