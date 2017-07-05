@@ -223,14 +223,15 @@ The CITE Image extension extends a collection to support working with binary ima
 1.  The URN of the extended collection.
 2.  The protocol used for access to binary image data.  As of version 3.0 of the CEX specification, all possible values are not enumerated, but we recommend the following set of values:
     -   `CITE` for the REST API of the CITE Image service
-    -   `IIIF` for the API of the International Image Ineroperability Framework
-    -   `IIPImage` for the [IIP Image Procotocl](http://iipimage.sourceforge.net)
-    -   `localDZ` for image data stored as DeepZoom files in a local file system
+    -   `iiifString` for the API of the International Image Ineroperability Framework
+    -   `iipImageString` for the [IIP Image Procotocl](http://iipimage.sourceforge.net)
+    -   `localJpegString` for JPG files on the local filesystem
+    -   `localDzString` for image data stored as DeepZoom files in a local file system
 3.  A base URL for access to binary image data.  The meaning and form of this will depend on the protocol selected.  As of version 1.1 of the CEX specification we recommend the following:
     -   For the `CITE image` protocol, a base URL to which CITE Image API requests can be appended.
-    -   For the `IIIF` protocol, the URL of the context definition of the service.
-    -   For the `IIPImage` protocol, the URL of the context definition of the service.
-    -   For the `localDZ` protocol, a relative URL to a base directory for a file system tree.
+    -   For the `iiifString` protocol, the URL of the context definition of the service.
+    -   For the `iipImageString` protocol, the URL of the context definition of the service.
+    -   For the `localDzString` and `localJpegString` protocols, a relative URL to a base directory for a file system tree.
 4.  The URN of a property in the collection stating the license for the binary image data.
 
 Note that it is possible to extend a single image collection with multiple protocols, each represented by a single line in the `imagedata` block.   Since the CEX structure identifies a property with licensing data for each protocol, it is equally possible to have the same license apply to all forms of binary access, or to document protocol-specific licensing for each image.
