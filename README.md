@@ -6,9 +6,9 @@ A repository for openly licensed libraries of data in valid `.cex` format. Licen
 
 Specifications of the CITE Exchange format are available in the [docs directory](docs).
 
-The latest release version of the specification is [version **2.0**](docs/CEX-spec-2.0.md).
+The latest release version of the specification is [version **3.0**](docs/CEX-spec-2.0.md).
 
-The current draft version of the specification is [version **2.1**](docs/CEX-spec-2.1.md).  No further functionality is planned beyond version 2.1.
+No further functionality is planned beyond version 3.0.
 
 
 ## Freely reusable data sets
