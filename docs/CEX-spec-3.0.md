@@ -31,9 +31,9 @@ Valid block labels are:
 -   `#!citelibrary`
 -   `#!ctsdata`
 -   `#!ctscatalog`
--   `#!citedata`
 -   `#!citecollections`
 -   `#!citeproperties`
+-   `#!citedata`
 -   `#!imagedata`
 -   `#!relations`
 -   `#!datamodels`
@@ -97,7 +97,7 @@ The `citelibrary` may optionally include one or more lines associating CITE name
 The `ctscatalog` block contains a table with minimal cataloging data about one or more citable texts.  The table is represented as seven columns of delimited text, with columns separated by a string delimiter that does not otherwise appear in content lines of the block.  The first content line is a header line with labels for each column.  Subsequent content lines document citable versions or exemplars of a text.  The seven columns may have any String labels in the header row, but in all rows columns must follow this sequence:
 
 1.  CTS URN for the version or exemplar
-2.  labels for each tier of the citation hierarchy, with levels separated by a "/" character
+2.  labels for each tier of the citation hierarchy. These are separated by a secondary delimiter that does not occur elsewhere in the value of this property.
 3.  name of the text group
 4.  title of the work
 5.  label of the edition or translation
@@ -108,7 +108,7 @@ The `ctscatalog` block contains a table with minimal cataloging data about one o
 
 Note that it is possible to catalog texts that are not online.  Within a CEX serialization, cataloging a work as online means that citable texts nodes for this CTS URN must be available in the `ctsdata` block of the CEX.
 
-**Example**:  The following example is a valid `ctscatalog` block, using `#` for its delimiting string.  It defines a version of a text:  note that the column for exemplar label is empty.
+**Example**:  The following example is a valid `ctscatalog` block, using `#` for its delimiting string. The tiers of the citation hierarchy are separated using `,` as the delimiting string.  It defines a version of a text:  note that the column for exemplar label is empty.
 
     #!ctscatalog
 
@@ -221,14 +221,17 @@ Subsequent content lines give data values for a single object.  Data values in e
 The CITE Image extension extends a collection to support working with binary image data. A CEX source including an `imagedata` block must therefore also include  `citecollections`, `citeproperties` and `citedata` blocks.   Content lines of the `imagedata` block are composed of four columns:
 
 1.  The URN of the extended collection.
-2.  The protocol used for access to binary image data.  As of version 3.0 of the CEX specification, possible values are not enumerated, but we recommend the following set of values:
+2.  The protocol used for access to binary image data.  As of version 3.0 of the CEX specification, all possible values are not enumerated, but we recommend the following set of values:
     -   `CITE` for the REST API of the CITE Image service
-    -   `IIIF` for the API of the International Image Ineroperability Framework
-    -   `localFile` for image data stored as files in a local file system
+    -   `iiifString` for the API of the International Image Ineroperability Framework
+    -   `iipImageString` for the [IIP Image Procotocl](http://iipimage.sourceforge.net)
+    -   `localJpegString` for JPG files on the local filesystem
+    -   `localDzString` for image data stored as DeepZoom files in a local file system
 3.  A base URL for access to binary image data.  The meaning and form of this will depend on the protocol selected.  As of version 1.1 of the CEX specification we recommend the following:
     -   For the `CITE image` protocol, a base URL to which CITE Image API requests can be appended.
-    -   For the `IIIF` protocol, the URL of the context definition of the service.
-    -   For the `local file` protocol, a relative URL to a base directory for a file system tree.  The base directory should contain one subdirectory for each collection, and within each subdirectory one image source for each object.
+    -   For the `iiifString` protocol, the URL of the context definition of the service.
+    -   For the `iipImageString` protocol, the URL of the context definition of the service.
+    -   For the `localDzString` and `localJpegString` protocols, a relative URL to a base directory for a file system tree.
 4.  The URN of a property in the collection stating the license for the binary image data.
 
 Note that it is possible to extend a single image collection with multiple protocols, each represented by a single line in the `imagedata` block.   Since the CEX structure identifies a property with licensing data for each protocol, it is equally possible to have the same license apply to all forms of binary access, or to document protocol-specific licensing for each image.
@@ -243,7 +246,7 @@ Note that it is possible to extend a single image collection with multiple proto
 
     urn:cite2:hmt:vaimg.v1:#CITE image#http://www.homermultitext.org/hmtdigital/images?
     urn:cite2:hmt:vaimg.v1:#IIIF#http://www.homermultitext.org/image2/context.json
-    urn:cite2:hmt:vaimg.v1:#local file
+    urn:cite2:hmt:vaimg.v1:#localDZ
 
 
 ### `relations`
@@ -263,7 +266,7 @@ The subject and object elements of each statement must be URN values (either CIT
 
 ### `datamodels`
 
-Content lines in the `datamodels` block associate CITE Collections with externally defined data models. Collections are identified by a CITE2 URN; data models are identified by a CITE2 URN, and arevdescribed by both a brief label, and a fuller statement that may include references to sources of further information about the data model.  These four items are represented as columns of delimited text, with columns separated by a string delimiter that does not otherwise appear in content lines of the block.
+Content lines in the `datamodels` block associate CITE Collections with externally defined data models. Collections are identified by a CITE2 URN; data models are identified by a CITE2 URN, and are described by both a brief label, and a fuller statement that may include references to sources of further information about the data model.  These four items are represented as columns of delimited text, with columns separated by a string delimiter that does not otherwise appear in content lines of the block.
 
 
 Collections identified in the `datamodel` block must be cataloged in `citecollections` and `citeproperties` blocks and instantiated in a `citedata` block.  The collection associated with a data model could be a collection of verbs relating objects in further collections in a `relations` block.
