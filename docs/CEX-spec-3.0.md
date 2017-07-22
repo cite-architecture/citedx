@@ -2,7 +2,7 @@
 
 ## Status
 
-**Draft** status.
+**Release** status.
 
 
 ## Versions
