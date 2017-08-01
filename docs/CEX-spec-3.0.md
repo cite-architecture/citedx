@@ -183,7 +183,7 @@ The first content line of the `citeproperties` block is a labelling header line 
 
     #!citeproperties
 
-    Collection#Label#Type#Authority list
+    Property#Label#Type#Authority list
     urn:cite2:hmt:msA.v1.urn:#Image URN#Cite2Urn#
     urn:cite2:hmt:msA.v1.caption:#Caption#String#
     urn:cite2:hmt:msA.v1.rights:#License for binary image data#String#CC-attribution-share-alike,public domain
