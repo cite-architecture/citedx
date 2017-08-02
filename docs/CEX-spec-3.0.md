@@ -268,6 +268,7 @@ The subject and object elements of each statement must be URN values (either CIT
 
 Content lines in the `datamodels` block associate CITE Collections with externally defined data models. Collections are identified by a CITE2 URN; data models are identified by a CITE2 URN, and are described by both a brief label, and a fuller statement that may include references to sources of further information about the data model.  These four items are represented as columns of delimited text, with columns separated by a string delimiter that does not otherwise appear in content lines of the block.
 
+The first content line of the `datamodels` block is a labelling header line and is ignored in processing.
 
 Collections identified in the `datamodel` block must be cataloged in `citecollections` and `citeproperties` blocks and instantiated in a `citedata` block.  The collection associated with a data model could be a collection of verbs relating objects in further collections in a `relations` block.
 
