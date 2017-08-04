@@ -3,7 +3,7 @@ import edu.holycross.shot.scm._
 import java.io.File
 
 
-val v3dir = "..//libraries/"
+val v3dir = "../libraries/"
 // collect all .cex files in libraries directory:
 val libraryDir = new File(v3dir)
 val fileVector = libraryDir.listFiles.filter(_.isFile).toVector
