@@ -1549,7 +1549,8 @@ urn:cite2:hmt:vaimg.v1:VA016RN_0017#Venetus A: Marcianus Graecus Z. 454 (= 822),
 
 #!imagedata
 
-urn:cite2:hmt:vaimg.v1:#iipImageString#http://www.homermultitext.org/iipsrv?#urn:cite2:hmt:vaimg.v1.rights:
+urn:cite2:hmt:vaimg.v1:#iipImageDzString#http://www.homermultitext.org/iipsrv?#urn:cite2:hmt:vaimg.v1.rights:
+urn:cite2:hmt:vaimg.v1:#iipImageJpegString#http://www.homermultitext.org/iipsrv?#urn:cite2:hmt:vaimg.v1.rights:
 urn:cite2:hmt:vaimg.v1:#localJpegString#./image_archive#urn:cite2:hmt:vaimg.v1.rights:
 urn:cite2:hmt:vaimg.v1:#localDzString#./image_archive#urn:cite2:hmt:vaimg.v1.rights:
 
