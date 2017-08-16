@@ -1505,6 +1505,9 @@ urn:cts:greekLit:tlg0012.tlg001.allen:2.877#τηλόθεν ἐκ Λυκίης, �
 URN#Description#Labelling property#Ordering property#License
 urn:cite2:hmt:msA.v1:#Pages of the Venetus A manuscript#urn:cite2:hmt:msA.v1.label:#urn:cite2:hmt:msA.v1.sequence:#CC-attribution-share-alike
 urn:cite2:hmt:vaimg.v1:#Images of the Venetus A manuscript#urn:cite2:hmt:vaimg.v1.label:##CC-attribution-share-alike
+urn:cite2:hmt:vbimg.2017a:#Images of the Venetus B manuscript#urn:cite2:hmt:vbimg.2017a.label:##CC-attribution-share-alike
+urn:cite2:hmt:e4img.2017a:#Images of the Omega 1.12 manuscript #urn:cite2:hmt:e4img.2017a.label:##CC-attribution-share-alike
+urn:cite2:fufolio:chad.2017a:#Images of the St. Chad Gospel, Lichfield Cathedral.#urn:cite2:fufolio:chad.2017a.label:##CC-attribution-share-alike
 
 #!citeproperties
 Property#Label#Type#Authority list
@@ -1524,6 +1527,25 @@ urn:cite2:hmt:vaimg.v1.urn:#URN#Cite2Urn#
 urn:cite2:hmt:vaimg.v1.label:#Label#String#
 urn:cite2:hmt:vaimg.v1.rights:#Rights#String#
 urn:cite2:hmt:vaimg.v1.rv:#Recto or Verso#String#front,back
+
+#!citeproperties
+Property#Label#Type#Authority list
+urn:cite2:hmt:vbimg.2017a.urn:#URN#Cite2Urn#
+urn:cite2:hmt:vbimg.2017a.label:#Label#String#
+urn:cite2:hmt:vbimg.2017a.rights:#Rights#String#
+urn:cite2:hmt:vbimg.2017a.rv:#Recto or Verso#String#front,back
+
+#!citeproperties
+Property#Label#Type#Authority list
+urn:cite2:hmt:e4img.2017a.urn:#URN#Cite2Urn#
+urn:cite2:hmt:e4img.2017a.label:#Label#String#
+urn:cite2:hmt:e4img.2017a.rights:#Rights#String#
+
+#!citeproperties
+Property#Label#Type#Authority list
+urn:cite2:fufolio:chad.2017a.urn:#URN#Cite2Urn#
+urn:cite2:fufolio:chad.2017a.label:#Label#String#
+urn:cite2:fufolio:chad.2017a.rights:#Rights#String#
 
 
 #!citedata
@@ -1547,12 +1569,61 @@ urn:cite2:hmt:vaimg.v1:VA014VN_0516#Venetus A: Marcianus Graecus Z. 454 (= 822),
 urn:cite2:hmt:vaimg.v1:VA015RN_0016#Venetus A: Marcianus Graecus Z. 454 (= 822), folio 15, recto.#CC-attribution-share-alike#front
 urn:cite2:hmt:vaimg.v1:VA016RN_0017#Venetus A: Marcianus Graecus Z. 454 (= 822), folio 15, verso.#CC-attribution-share-alike#back
 
+#!citedata
+urn#label#rights
+urn:cite2:hmt:e4img.2017a:e4_006#Escorial Omega 1.12 (Allen E4) image 6#CC-attribution-share-alike
+urn:cite2:hmt:e4img.2017a:e4_007#Escorial Omega 1.12 (Allen E4) image 7#CC-attribution-share-alike
+urn:cite2:hmt:e4img.2017a:e4_008#Escorial Omega 1.12 (Allen E4) image 8#CC-attribution-share-alike
+urn:cite2:hmt:e4img.2017a:e4_009#Escorial Omega 1.12 (Allen E4) image 9#CC-attribution-share-alike
+urn:cite2:hmt:e4img.2017a:e4_010#Escorial Omega 1.12 (Allen E4) image 10#CC-attribution-share-alike
+urn:cite2:hmt:e4img.2017a:e4_011#Escorial Omega 1.12 (Allen E4) image 11#CC-attribution-share-alike
+urn:cite2:hmt:e4img.2017a:e4_012#Escorial Omega 1.12 (Allen E4) image 12#CC-attribution-share-alike
+
+#!citedata
+urn#label#rights
+urn:cite2:fufolio:chad.2017a:Chad001#St. Chad Gospel, Lichfield Cathedral, Image 1#CC-attribution-share-alike
+urn:cite2:fufolio:chad.2017a:Chad1Bv#St. Chad Gospel, Lichfield Cathedral, Image 1Bv#CC-attribution-share-alike
+urn:cite2:fufolio:chad.2017a:Chad002#St. Chad Gospel, Lichfield Cathedral, Image 2#CC-attribution-share-alike
+urn:cite2:fufolio:chad.2017a:Chad003#St. Chad Gospel, Lichfield Cathedral, Image 3#CC-attribution-share-alike
+urn:cite2:fufolio:chad.2017a:Chad004#St. Chad Gospel, Lichfield Cathedral, Image 4#CC-attribution-share-alike
+urn:cite2:fufolio:chad.2017a:Chad001re#St. Chad Gospel, Lichfield Cathedral, Image 1re#CC-attribution-share-alike
+urn:cite2:fufolio:chad.2017a:Chad003re#St. Chad Gospel, Lichfield Cathedral, Image 3re#CC-attribution-share-alike
+urn:cite2:fufolio:chad.2017a:Chad003re_FF#St. Chad Gospel, Lichfield Cathedral, Image 3re ff#CC-attribution-share-alike
+
+
+#!citedata
+urn#label#rights#rv
+urn:cite2:hmt:vbimg.2017a:VB001RN_0445#Marcianus Graecus Z. 453 [= 821] folio 001 recto#CC-attribution-share-alike#front
+urn:cite2:hmt:vbimg.2017a:VB001RUV_0002#Marcianus Graecus Z. 453 [= 821] folio 001 recto (ultraviolet)#CC-attribution-share-alike#front
+urn:cite2:hmt:vbimg.2017a:VB001VN_0101#Marcianus Graecus Z. 453 [= 821] folio 001 verso#CC-attribution-share-alike#back
+urn:cite2:hmt:vbimg.2017a:VB001VUV_0095#Marcianus Graecus Z. 453 [= 821] folio 001 verso (ultraviolet)#CC-attribution-share-alike#back
+urn:cite2:hmt:vbimg.2017a:VB002RN_0446#Marcianus Graecus Z. 453 [= 821] folio 002 recto#CC-attribution-share-alike#front
+urn:cite2:hmt:vbimg.2017a:VB002RUV_0003#Marcianus Graecus Z. 453 [= 821] folio 002 recto (ultraviolet)#CC-attribution-share-alike#front
+urn:cite2:hmt:vbimg.2017a:VB002VN_0102#Marcianus Graecus Z. 453 [= 821] folio 002 verso#CC-attribution-share-alike#back
+urn:cite2:hmt:vbimg.2017a:VB002VUV_0094#Marcianus Graecus Z. 453 [= 821] folio 002 verso (ultraviolet)#CC-attribution-share-alike#back
+
 #!imagedata
 
 urn:cite2:hmt:vaimg.v1:#iipImageDzString#http://www.homermultitext.org/iipsrv?#urn:cite2:hmt:vaimg.v1.rights:
 urn:cite2:hmt:vaimg.v1:#iipImageJpegString#http://www.homermultitext.org/iipsrv?#urn:cite2:hmt:vaimg.v1.rights:
 urn:cite2:hmt:vaimg.v1:#localJpegString#./image_archive#urn:cite2:hmt:vaimg.v1.rights:
 urn:cite2:hmt:vaimg.v1:#localDzString#./image_archive#urn:cite2:hmt:vaimg.v1.rights:
+
+urn:cite2:hmt:vbimg.2017a:#iipImageDzString#http://www.homermultitext.org/iipsrv?#urn:cite2:hmt:vbimg.2017a.rights:
+urn:cite2:hmt:vbimg.2017a:#iipImageJpegString#http://www.homermultitext.org/iipsrv?#urn:cite2:hmt:vbimg.2017a.rights:
+urn:cite2:hmt:vbimg.2017a:#localJpegString#./image_archive#urn:cite2:hmt:vbimg.v1.rights:
+urn:cite2:hmt:vbimg.2017a:#localDzString#./image_archive#urn:cite2:hmt:vbimg.2017a.rights:
+
+//urn:cite2:hmt:e4img.2017a:#iipImageDzString#http://www.homermultitext.org/iipsrv?#urn:cite2:hmt:e4img.2017a.rights:
+//urn:cite2:hmt:e4img.2017a:#iipImageJpegString#http://www.homermultitext.org/iipsrv?#urn:cite2:hmt:e4img.2017a.rights:
+urn:cite2:hmt:e4img.2017a:#localJpegString#./image_archive#urn:cite2:hmt:e4img.v1.rights:
+urn:cite2:hmt:e4img.2017a:#localDzString#./image_archive#urn:cite2:hmt:e4img.2017a.rights:
+
+urn:cite2:fufolio:chad.2017a:#iipImageDzString#http://www.homermultitext.org/iipsrv?#urn:cite2:fufolio:chad.2017a.rights:
+urn:cite2:fufolio:chad.2017a:#iipImageJpegString#http://www.homermultitext.org/iipsrv?#urn:cite2:fufolio:chad.2017a.rights:
+//urn:cite2:fufolio:chad.2017a:#localJpegString#./image_archive#urn:cite2:fufolio:chad.v1.rights:
+//urn:cite2:fufolio:chad.2017a:#localDzString#./image_archive#urn:cite2:fufolio:chad.2017a.rights:
+
 
 #!relations
 
