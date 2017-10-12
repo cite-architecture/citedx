@@ -127,7 +127,7 @@ The `ctsdata` block contains a two-column representation of a citable text in th
 
 **Example**: The following example is a valid `ctscatalog` block, using `#` for its delimiting string.  It defines two citable nodes of text.
 
-    #!ctscatalog
+    #!ctsdata
     // CTS data:  "#" is the column delimiter.
 
     urn:cts:greekLit:tlg5026.msA.hmt:1.2.lemma#μῆνις
