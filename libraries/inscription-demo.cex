@@ -1,0 +1,50 @@
+
+// A demonstration CEX containing epigraphic texts and data
+
+#!cexversion
+3.0
+
+#!citelibrary
+name#igcyr
+urn#urn:cite2:cex:demo.2017_1:igcyr
+license#CC Share Alike.  For details, see more info.
+
+#!ctscatalog
+urn#citationScheme#groupName#workTitle#versionLabel#exemplarLabel#online#lang
+urn:cts:igcyr:gvcyr.004.diplXml:#line/half-line#Greek Verse Inscriptions of Cyrenaica#Inscription 004#Diplomatic XML Edition##true#grc
+urn:cts:igcyr:gvcyr.004.diplLeiden:#line#Greek Verse Inscriptions of Cyrenaica#Inscription 004#Diplomatic Edition Leiden Convention##true#grc
+urn:cts:igcyr:gvcyr.004.tokens:#line/half-line/token#Greek Verse Inscriptions of Cyrenaica#Inscription 004#Tokenized##true#grc
+urn:cts:igcyr:gvcyr.004.meter:#line/half-line#Greek Verse Inscriptions of Cyrenaica#Inscription 004#metrically analyzed##true#grc
+urn:cts:igcyr:gvcyr.004.french:#line#Greek Verse Inscriptions of Cyrenaica#Inscription 004#French translation##true#fra
+urn:cts:igcyr:gvcyr.004.english:#line#Greek Verse Inscriptions of Cyrenaica#Inscription 004#English translation##true#eng
+urn:cts:igcyr:gvcyr.004.italian:#line#Greek Verse Inscriptions of Cyrenaica#Inscription 004#Italian translation##true#ita
+
+
+#!ctsdata
+urn:cts:igcyr:gvcyr.004.diplXml:1.1#<w lemma="μνῆμα">Mνῆμα</w> <w lemma="ἀρετή">ἀρετῆς</w> <w lemma="ὅδε">τόδε</w> <w lemma="τίθημι">ἔθηκε</w>
+urn:cts:igcyr:gvcyr.004.diplXml:1.2#<persName type="attested" key=""><name nymRef="_Φίλων">Φίλων</name></persName> <persName type="attested" key=""><name nymRef="_Ἀρχώι">Ἀρχοῖ</name></persName> <w lemma="συνόμευνος">συνομεύνωι</w>
+urn:cts:igcyr:gvcyr.004.diplXml:2.1#<gap reason="lost" quantity="13" unit="character" precision="medium"/><orig><unclear>α</unclear>ι</orig> <gap reason="lost" quantity="5" unit="character" precision="medium"/>
+urn:cts:igcyr:gvcyr.004.diplXml:2.2#<gap reason="lost" atLeast="17" atMost="18" unit="character" precision="medium"/><w part="F">ωι</w>.
+
+urn:cts:igcyr:gvcyr.004.diplLeiden:1#| mνῆμα ἀρετῆς τόδε ἔθηκε | φίλων ἀρχοῖ συνομεύνωι
+urn:cts:igcyr:gvcyr.004.diplLeiden:2#| [.............] α̣ι [.....]  |  [c. 17 - 18]ωι.
+
+urn:cts:igcyr:gvcyr.004.meter:1# ˘ – – | ˘ – – | ˘ – – | ˘ ˘ | ˘ – – | ˘ ˘
+urn:cts:igcyr:gvcyr.004.meter:2#[---]
+
+urn:cts:igcyr:gvcyr.004.tokens:1.1.1#Mνῆμα
+urn:cts:igcyr:gvcyr.004.tokens:1.1.2#ἀρετῆς
+urn:cts:igcyr:gvcyr.004.tokens:1.1.3#τόδε
+urn:cts:igcyr:gvcyr.004.tokens:1.1.4#ἔθηκε
+urn:cts:igcyr:gvcyr.004.tokens:1.2.1#Φίλων
+urn:cts:igcyr:gvcyr.004.tokens:1.2.2#Ἀρχοῖ
+urn:cts:igcyr:gvcyr.004.tokens:1.2.3#συνομεύνωι
+urn:cts:igcyr:gvcyr.004.tokens:2.1.1#ΑΙ
+urn:cts:igcyr:gvcyr.004.tokens:2.2.1#ωι
+
+urn:cts:igcyr:gvcyr.004.french:1#Philôn a fait faire cette (base) pour son épouse Arkhô comme souvenir de sa valeur 
+urn:cts:igcyr:gvcyr.004.french:2#[---]
+urn:cts:igcyr:gvcyr.004.english:1#Philon laid down this (base) for his wife Archo as a record of her virtue
+urn:cts:igcyr:gvcyr.004.english:2#[---]
+urn:cts:igcyr:gvcyr.004.italian:1#Philon pose questa (base) per sua moglie Archò in memoria della sua virtù
+urn:cts:igcyr:gvcyr.004.italian:2#[---]
