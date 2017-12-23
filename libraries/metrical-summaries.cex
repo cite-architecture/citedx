@@ -11,7 +11,7 @@ urn#urn:cite2:cex:demo.2017_1:metsumm
 license#CC Share Alike. For details, see more info.
 
 #!ctscatalog
-urn#citationScheme#groupName#workTitle#versionLabel#exemplarLabel#online
+urn#citationScheme#groupName#workTitle#versionLabel#exemplarLabel#online#lang
 urn:cts:greekLit:tlg7000.tlg001.msA:#book/poem/line#The Greek Anthology#Anthology#Greek. Argumenta Iliados. Venetus A (Marcianus 822). Homer Multitext. CC 3.0.##true#grc
 urn:cts:greekLit:tlg7000.tlg001.msAeng:#book/poem/line#The Greek Anthology#Anthology#Eng. Argumenta Iliados. Dué and Blackwell, trans. from MS. Venetus A (Marcianus 822). Homer Multitext. CC 3.0.##true#grc
 urn:cts:greekLit:tlg7000.tlg001.kunic:#book/poem/line#The Greek Anthology#Anthology#Latin. Argumenta Iliados. Kunić, Rajmund, c. 1776. Hanc editionem electronicam curavit Neven Jovanović, CroALa 2013. Modified and distributed under the terms of the CC BY-NC-SA 3.0 HR licence.##true#grc
