@@ -26,9 +26,11 @@ In addition, for libraries that include a text repository, the referential integ
 
 ## Validating and contributing your own libraries
 
-The `validator` directory includes a scala build file and short script to validate all files in the `libraries` directory with file names ending in `.cex`.  You must have scala and sbt installed to run it as follows:
+The `validator` directory includes a scala build file and short script to validate all files in a given directory with file names ending in `.cex`.  You must have scala and sbt installed to run it as follows:
 
-1. within the `validator` directory, start an sbt console session: `sbt console`
-2. load and run the script:  `:load validate.sc`
+1.  within the `validator` directory, start an sbt console session: `sbt console`
+2.  load and run the script:  `:load validate.sc`.  This defines a function named `validate`.
+3.  call the function with a directory name (e.g., `validate("mylibrary")`) or omit a directory name to validate the repository's `libraries`directory by  default:  `validate()`.
 
-You can test your own `.cex` files by dropping them in the libraries directory and running the script.  We encourage you to submit any valid libraries by means of pull-requests to this GitHub repository.
+
+We encourage you to submit any valid libraries by means of pull-requests to this GitHub repository.
