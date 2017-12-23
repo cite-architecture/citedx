@@ -1,4 +1,7 @@
-# The CITE Exchange (CEX) format
+---
+title:   The CITE Exchange (CEX) format
+layout: page
+---
 
 ## Status
 

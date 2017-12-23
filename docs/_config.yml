@@ -1,0 +1,25 @@
+
+
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            CITE data exchange
+tagline:          'Open data in simple structured formats'
+description:      ''
+
+
+baseurl: '/citedx/'
+
+
+author:
+  name:           'Neel Smith'
+
+
+links:
+  - title: Specification
+    url: CEX-spec-3.0
+  - title: HMT web
+    url: http://www.homermultitext.org/
+    external: true
