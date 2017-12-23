@@ -18,8 +18,8 @@ author:
 
 
 links:
-  - title: Specification
-    url: CEX-spec-3.0
-  - title: HMT web
-    url: http://www.homermultitext.org/
+  - title: Current specification
+    url: CEX-spec-3.0.1
+  - title:  Github repository
+    url:  https://github.com/cite-architecture/citedx
     external: true
