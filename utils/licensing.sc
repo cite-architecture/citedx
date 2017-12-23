@@ -3,7 +3,7 @@ import edu.holycross.shot.cite._
 import scala.io.Source
 import edu.holycross.shot.scm._
 import edu.holycross.shot.ohco2._
-
+import java.io.PrintWriter
 
 // Case class for license info for a given text cataloged in
 // a given CEX source file.
@@ -23,7 +23,6 @@ case class LicenseInfo(sourceFile: String, edition: CtsUrn, license: Option[Stri
 def licenseForUrn(u:  CtsUrn): Option[String] = {
   val base = new File("../libraries/licenses")
   val licenseFile = new File(base, s"""cts/${u.namespace}/${u.textGroup}/${u.work}/${u.version}/license.md""")
-  println("LOOK FOR " + licenseFile)
   if (licenseFile.exists) {
     val license = Source.fromFile(licenseFile).getLines.mkString("\n")
     Some(license)
@@ -59,14 +58,7 @@ def checkFiles(dir: String =  "../libraries"):  Vector[LicenseInfo] = {
        val uVector= tr.get.catalog.texts.map(_.urn)
        println(s"""URNs for ${cex} are:\n """ + uVector.mkString("\n"))
 
-
-
-
-       uVector.map(u =>
-       { val urnLicense =licenseForUrn(u)
-         println(s"""LIC FOR ${u} == ${urnLicense}""")
-       LicenseInfo(cex.getName, u, urnLicense ) }
-     )
+       uVector.map(u => { val urnLicense =licenseForUrn(u); LicenseInfo(cex.getName, u, urnLicense ) } )
 
       }
     }
@@ -84,7 +76,21 @@ def writeReports(dir:  String =  "../libraries"): Unit ={
       case _ => false
     }
   }
+
+  val badMap = bad.groupBy(_.sourceFile)
   println("Missing licenses:  " + bad.size)
+
+
+  val  badMarkdown = for (k <- badMap.keySet.toSeq.sorted) yield {
+    val urns = badMap(k).map(_.edition.toString).map(s => "-   " + s)
+    val lst = urns.mkString("\n")
+    s"""## In file `${k}`\n\n${lst}"""
+  }
+
+  val badHdr = "# Cataloged texts missing license\n\n"
+  val badTxt = badHdr + badMarkdown.mkString("\n\n")
+  new PrintWriter(new File("missing.md")) {write(badTxt); close}
+
   val good = licenses.filter{ li =>
     li.license match {
       case None => false
@@ -92,5 +98,13 @@ def writeReports(dir:  String =  "../libraries"): Unit ={
     }
   }
   println("Valid licenses: " + good.size)
+
+
+  val goodMarkdown = for (g <-  good ) yield {
+    s"""## `${g.edition}`\n\n""" + licenseForUrn(g.edition).get
+  }
+  val goodHdr = "# Licenses\n\n"
+  val goodTxt = goodHdr + goodMarkdown.mkString("\n\n")
+  new PrintWriter(new File("licenses.md")) {write(goodTxt); close}
 
 }
