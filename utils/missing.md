@@ -10,10 +10,6 @@
 -   urn:cts:greekLit:tlg0012.tlg001.perseus_grc2.tokens:
 -   urn:cts:greekLit:tlg0012.tlg001.perseus_grc2.lemmata:
 
-## In file `cite-test-enriched.cex`
-
--   urn:cts:greekLit:tlg0012.tlg001.allen:
-
 ## In file `cite-test-huge.cex`
 
 -   urn:cts:greekLit:tlg0012.tlg001.perseus_grc2:
@@ -75,8 +71,3 @@
 ## In file `plutarch_pericles.cex`
 
 -   urn:cts:greekLit:tlg0007.tlg012.neue:
-
-## In file `two_iliads.cex`
-
--   urn:cts:greekLit:tlg0012.tlg001.allen:
--   urn:cts:croala:kunicr.ilias.croala_ohco2:
