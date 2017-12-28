@@ -1,0 +1,1 @@
+The text is licensed under the Creative Commons 3 Attribution-Share-Alike License, and is derived from the Perseus Digital Library edition, <http://www.perseus.tufts.edu>, distributed under the terms of a Creative Commons Attribution 3.0 License.

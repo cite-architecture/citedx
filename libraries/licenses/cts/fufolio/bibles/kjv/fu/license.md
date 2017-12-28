@@ -1,0 +1,1 @@
+The poetry of Hafez is from the Open Persian Project of Leipzig University, <http://www.dh.uni-leipzig.de/wo/open-philology-project/open-persian/>, Gregory Crane, Saeed Majidi, and Maryam Foradi, edd. Distributed under the terms of a Creative Commons 3.0 Attribution License.

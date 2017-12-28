@@ -1,0 +1,1 @@
+The Greek text of Plutarch is from the edition of Ziegler, published on Archive.org <http://www.archive.org> and released into the Public Domain. Preparation of this digital edition was funded by a grant from the Andrew W. Mellon Foundation.
