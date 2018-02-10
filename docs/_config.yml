@@ -20,6 +20,9 @@ author:
 links:
   - title: Current specification
     url: CEX-spec-3.0.1
+  - title: CITE architecture: home
+    url:  https://cite-architecture.github.io/
+    external: true
   - title:  Github repository
     url:  https://github.com/cite-architecture/citedx
     external: true
