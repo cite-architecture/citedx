@@ -1,0 +1,63 @@
+// Library of texts for testing CITE Collections
+// THIS IS NOT SCHOLARLY DATA
+// The pound sign "#" is used as a column divider.
+#!cexversion
+3.0
+
+#!citelibrary
+name#CITE-Test
+urn#urn:cite2:furman:cex.2017a:cite_test
+license#Creative Commons Attribution Share Alike
+
+#!datamodels
+Collection#Model#Label#Description
+urn:cite2:hmt:vaimg.2017a:#urn:cite2:cite:datamodels.v1:imagemodel#Citable image model#CITE architecture model of citable images.  See documentation at <http://cite-architecture.github.io/imagemodel/>.
+urn:cite2:hmt:vaimg.2017a:#urn:cite2:cite:datamodels.v1:binaryimg#Citable image model#CITE architectur model of binary images manipulable by URN reference.  See <TBA>.
+
+#!citecollections
+URN#Description#Labelling property#Ordering property#License
+urn:cite2:hmt:vaimg.2017a:#Images of the Venetus A manuscript#urn:cite2:hmt:vaimg.2017a.label:##CC-attribution-share-alike
+// datamodels and extensions
+urn:cite2:cite:datamodels.v1:#CITE data models#urn:cite2:cite:datamodels.v1.label:##Public domain
+urn:cite2:hmt:binaryimg.v1:#Collections of binary images#urn:cite2:hmt:binaryimg.v1.label:##Public domain
+
+#!citeproperties
+Property#Label#Type#Authority list
+urn:cite2:cite:datamodels.v1.urn:#Data model#Cite2Urn#
+urn:cite2:cite:datamodels.v1.label:#Label#String#
+urn:cite2:cite:datamodels.v1.description:#Description#String#
+
+#!citeproperties
+Property#Label#Type#Authority list
+urn:cite2:hmt:binaryimg.v1.urn:#Binary Image#Cite2Urn#
+urn:cite2:hmt:binaryimg.v1.label:#Label#String#
+urn:cite2:hmt:binaryimg.v1.collection:#Image Collection#Cite2Urn#
+urn:cite2:hmt:binaryimg.v1.protocol:#Protocol#String#iiif,iipImageString
+urn:cite2:hmt:binaryimg.v1.path:#Path on Server#String#
+urn:cite2:hmt:binaryimg.v1.url:#Service URN Base#String#
+urn:cite2:hmt:binaryimg.v1.rights:#Rights#String#
+
+
+#!citeproperties
+Property#Label#Type#Authority list
+urn:cite2:hmt:vaimg.2017a.urn:#URN#Cite2Urn#
+urn:cite2:hmt:vaimg.2017a.label:#Label#String#
+urn:cite2:hmt:vaimg.2017a.rights:#Rights#String#
+
+
+#!citedata
+urn#label#collection#protocol#path#url#rights
+urn:cite2:hmt:binaryimg.v1:vaimg#Binary data for images of the Venetus A manuscript#urn:cite2:hmt:vaimg.2017a:#iipImageString#/project/homer/pyramidal/VenA/#http://www.homermultitext.org/iipsrv?#Creative Commons Attribution Share-Alike.
+urn:cite2:hmt:binaryimg.v1:e4img#Binary data for images of the Escrorial Ω 1.12  manuscript#urn:cite2:hmt:e4img.2017a:#iipImageString#/project/homer/pyramidal/E4/#http://www.homermultitext.org/iipsrv?#Creative Commons Attribution Share-Alike.
+
+#!citedata
+urn#label#description
+urn:cite2:cite:datamodels.v1:binaryimg#Binary image model#Model of binary images manipulable by URN reference.  See <TBA>.
+urn:cite2:cite:datamodels.v1:imagemodel#Citable images#Model of citable images from the CITE Architecture.  See <http://cite-architecture.github.io/imagemodel/>.
+
+#!citedata
+urn#label#rights
+urn:cite2:hmt:vaimg.2017a:VA082RN_0083#Venetus A: Marcianus Graecus Z. 454 (= 822).  Photograph in natural light, folio 82, recto.#This image was derived from an original ©2007, Biblioteca Nazionale Marciana, Venezie, Italia. The derivative image is ©2010, Center for Hellenic Studies. Original and derivative are licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 License. The CHS/Marciana Imaging Project was directed by David Jacobs of the British Library.
+urn:cite2:hmt:vaimg.2017a:VA083RN_0084#Venetus A: Marcianus Graecus Z. 454 (= 822).  Photograph in natural light, folio 83, recto.#This image was derived from an original ©2007, Biblioteca Nazionale Marciana, Venezie, Italia. The derivative image is ©2010, Center for Hellenic Studies. Original and derivative are licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 License. The CHS/Marciana Imaging Project was directed by David Jacobs of the British Library.
+urn:cite2:hmt:vaimg.2017a:VA084RN_0085#Venetus A: Marcianus Graecus Z. 454 (= 822).  Photograph in natural light, folio 84, recto.#This image was derived from an original ©2007, Biblioteca Nazionale Marciana, Venezie, Italia. The derivative image is ©2010, Center for Hellenic Studies. Original and derivative are licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 License. The CHS/Marciana Imaging Project was directed by David Jacobs of the British Library.
+
