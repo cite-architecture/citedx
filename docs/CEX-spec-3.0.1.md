@@ -97,7 +97,7 @@ The `citelibrary` may optionally include one or more lines associating CITE name
 ### `ctscatalog`
 
 
-The `ctscatalog` block contains a table with minimal cataloging data about one or more citable texts.  The table is represented as seven columns of delimited text, with columns separated by a string delimiter that does not otherwise appear in content lines of the block.  The first content line is a header line with labels for each column.  Subsequent content lines document citable versions or exemplars of a text.  The seven columns may have any String labels in the header row, but in all rows columns must follow this sequence:
+The `ctscatalog` block contains a table with minimal cataloging data about one or more citable texts.  The table is represented as eight columns of delimited text, with columns separated by a string delimiter that does not otherwise appear in content lines of the block.  The first content line is a header line with labels for each column.  Subsequent content lines document citable versions or exemplars of a text.  The eight columns may have any String labels in the header row, but in all rows columns must follow this sequence:
 
 1.  CTS URN for the version or exemplar
 2.  labels for each tier of the citation hierarchy. These are separated by a secondary delimiter that does not occur elsewhere in the value of this property.
