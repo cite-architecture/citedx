@@ -2,7 +2,7 @@
 
 A repository for openly licensed libraries of data in valid `.cex` format. Licensing information is included in each `.cex` file;  additional details are provided in [libraries/LICENSE.markdown](libraries/LICENSE.markdown).
 
-## The CITE Exchange format
+## The CITE Exchange format, version 3.0.2
 
 Specifications of the CITE Exchange format are in the `docs` directory.
 The latest release version of the specification is version **3.0.2**, available [here](https://cite-architecture.github.io/citedx/CEX-spec-3.0.2/).  Versions 3.0.1 and 3.0.2 correct minro typos;  the requirements of the specification are unchanged from 3.0.
