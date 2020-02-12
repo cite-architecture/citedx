@@ -128,7 +128,7 @@ Note that it is possible to catalog texts that are not online.  Within a CEX ser
 
 The `ctsdata` block contains a two-column representation of a citable text in the OHCO2 model.  Columns are separated by a string delimiter that does not otherwise appear in content lines of the block.  The first column gives the CTS URN for a citable node; the second column gives it text contents.  Within a given citable version or exemplar, nodes must be in document order.
 
-**Example**: The following example is a valid `ctscatalog` block, using `#` for its delimiting string.  It defines two citable nodes of text.
+**Example**: The following example is a valid `ctsdata` block, using `#` for its delimiting string.  It defines two citable nodes of text.
 
     #!ctsdata
     // CTS data:  "#" is the column delimiter.
