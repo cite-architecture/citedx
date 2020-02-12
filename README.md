@@ -5,7 +5,7 @@ A repository for openly licensed libraries of data in valid `.cex` format. Licen
 ## The CITE Exchange format
 
 Specifications of the CITE Exchange format are in the `docs` directory.
-The latest release version of the specification is version **3.0.1**, available [here](https://cite-architecture.github.io/citedx/CEX-spec-3.0.1/).  Version 3.0.1 corrects an error in an illustrative example:  the requirements of the specification are unchaged from 3.0.
+The latest release version of the specification is version **3.0.2**, available [here](https://cite-architecture.github.io/citedx/CEX-spec-3.0.2/).  Versions 3.0.1 and 3.0.2 correct minro typos;  the requirements of the specification are unchanged from 3.0.
 
 We are currently reviewing the `imagedata` block, and expect to deprecate it soon, in favor of a simpler solution using `datamodels` with CITE collections.
 
