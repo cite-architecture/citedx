@@ -10,7 +10,7 @@ layout: page
 
 ## Versions
 
-This document specifies version **3.0.1** of the CITE Exchange format.  Version numbers follow [semantic versioning guidelines](http://semver.org/).
+This document specifies version **3.0.2** of the CITE Exchange format.  Version numbers follow [semantic versioning guidelines](http://semver.org/).
 
 ## What it is
 
